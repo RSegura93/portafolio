@@ -1,9 +1,7 @@
 # $ git status
 
 assets/proyectos/*
-assets/wireframesProjects/*
-!DERECHOS*.png
-
+assets/wireframes Projects/*.psd
 
 # Untracked files:
 
