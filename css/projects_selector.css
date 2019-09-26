@@ -1,0 +1,25 @@
+#proyectos .selectores,
+#proyectos1 .selectores {
+	width: 100%;
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+	background: rgba(215, 218, 221, 0.2);
+}
+
+#proyectos .selectores .column,
+#proyectos1 .selectores .column {
+	width: auto;
+    min-height: 30px !important;
+    margin: 12px auto;
+}
+
+#proyectos .selectores .column >span,
+#proyectos1 .selectores .column >span {
+	text-align: center;
+	font-size: 16pt;
+	display: block;
+}
+
+#proyectos1>.selectores + div.class-flex {
+	margin-top: 30px;
+}

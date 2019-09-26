@@ -1,0 +1,94 @@
+formsProjects = {
+	"presentacion" : {
+		"detallado" : "En detalle",
+		"resumido"  : "En resumen"
+		// "circular"  : "Circular"
+	},
+	"mostrar" : {
+		"year": {
+			"2016" : "2016",
+			"2017" : "2017",
+			"2018" : "2018",
+			"2019" : "2019"
+		},
+		"company":{
+			"GRUPOAVATAR" : "GRUPOAVATAR",
+			"TICPOL"      : "TICPOL"
+		},
+		"framework": {
+			"CodeIgniter" : "CodeIgniter",
+			"Laravel"     : "Laravel",
+			"Angular"     : "Angular"
+		},
+		"charge": {
+			"DisenadorDB"             : "Diseñador de DB",
+			"Analista"                : "Analista",
+			"DesBack-end"             : "Desarrollador Back-end",
+			"DesFront-end"            : "Desarrollador Front-end",
+			"Lider"                   : "Líder",
+			"Gestor"                  : "Gestor"
+		},
+		"programminglanguage": {
+			"JavaScript" : "JavaScript",
+			"PHP"        : "PHP",
+			"SQL"        : "SQL",
+			"HTML"       : "HTML",
+			"CSS"        : "CSS",
+			"TypeScript" : "TypeScript",
+			"Stylus"     : "Stylus"
+		}
+	},
+	"ordenar" : {
+		"date-start"  : "Fecha de inicio",
+		"date-end"    : "Fecha de finalización"
+	},"fecha" : {
+		"DESC" : "Más reciente",
+		"ASC"  : "Más antiguo"
+	}
+}
+
+prefijoValuesForm = {
+	"year"                : "year",
+	"company"             : "company",
+	"framework"           : "framework",
+	"charge"              : "charge",
+	"programminglanguage" : "pl"
+}
+
+valoresTextSelect = {
+	"year"                : "Año",
+	"company"             : "Empresa",
+	"framework"           : "Framework",
+	"charge"              : "Responsabilidades",
+	"programminglanguage" : "Lenguajes de Programación"
+}
+
+
+
+dataProjectsWeb = [
+{
+	"fechasWB"  : "Marzo a Mayo 2019",
+	"cargoWB"   : "Desarrollador Full-Stack",
+	"nombrePWB" : "Proy. Explipol 2019"
+},{
+	"fechasWB"  : "Mayo a Noviembre 2018",
+	"cargoWB"   : "Desarrollador Full-Stack",
+	"nombrePWB" : "Proy. Explipol 2018"		
+},{
+	"fechasWB"  :  "Enero 2017 a Mayo 2018",
+	"cargoWB"   :  "Desarrollador Full-Stack y Responsable del  Editor Gráfico",
+	"nombrePWB" :  "Proy. Oráculo Matemágico"
+},{
+	"fechasWB"  : "Enero del 2017 a Abril del 2018",
+	"cargoWB"   : "Desarrollador Full-Stack Y Líder del proyecto",
+	"nombrePWB" : "Proy. Explipol 2017"
+},{
+	"fechasWB"  : "Agosto a Diciembre del 2016",
+	"cargoWB"   : "Desarrollor Full-Stack en CodeIgniter",
+	"nombrePWB" : "Proy. Oráculo Matemágico"
+},{
+	"fechasWB"  : "Agosto a Diciembre del 2016",
+	"cargoWB"   : "Desarrollador Full-Stack",
+	"nombrePWB" : "Proy. Explipol 2016"
+}
+]

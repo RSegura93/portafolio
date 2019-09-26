@@ -1,0 +1,55 @@
+.top-menu {
+	color: #344555;
+}
+
+.top-menu .logo{
+	float       : left;
+	font-size   : 24pt;
+	margin-left : 20px;
+	font-family : Arial;
+	font-weight : 700;
+}
+.top-menu .menu {
+	float             : right;
+	width             : 80px;
+	height            : 100%;
+	background-image  : url("../assets/icon-menu.png");
+	background-size   : 100% 100%, cover;
+	background-repeat : no-repeat;
+	cursor            : pointer;
+}
+.top-menu .menu:hover {
+	background-image  : url("../assets/icon-menu-hover.png");
+}
+
+.top-menu .menu ul {
+	position : relative;
+	top      : 50px;
+	right    : 70px;/*LI[width=150px] - MENU[width=80px]*/
+}
+
+.top-menu .menu ul li {
+	list-style       : none;
+	background-color : black;
+	color            : white;
+	width            : 150px;
+	font-size        : 18px;
+	padding-left     : 10px;
+	letter-spacing   : 1px;
+	border-top       : 1px #888888 solid;
+	border-bottom    : 1px #888888 solid;
+	min-height       : 40px;
+	text-align       : middle;
+	text-transform   : uppercase;
+}
+
+
+a.redirect {
+	text-decoration: none;
+	color: white;
+}
+a.redirect:hover {
+	text-decoration: none;
+	font-size: 14pt;
+	font-weight: 700;
+}

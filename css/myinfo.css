@@ -1,0 +1,135 @@
+/*margenes en elementos de columnas*/
+#my-info .columns .studies div,
+#my-info .knowledge	.programming-languages,
+#my-info .knowledge	.frameworks,
+#my-info .skills-qualities ul{
+	margin: 10px 0;
+}
+
+/*general blocks*/
+div#my-info div.columns{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-around;*/
+	justify-content: space-center;
+}
+
+div#my-info div.columns>div{
+	/*background-color: #0f0;*/
+	min-width: 300px;
+	width: 400px;
+	display: flex;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+div#my-info div.columns>div.skills-qualities{
+	/*padding-bottom: 50px;*/
+}
+/*title css*/
+div#my-info div.title {
+	margin: 0px 10px 15px 10px;
+	font-family: Arial;
+	font-size: 24pt;
+	text-align: center;
+	width: auto;
+	display: block;
+}
+
+/*primera columna studies*/
+#my-info .studies .title {
+	font-family: Arial;
+	font-size: 16pt;
+	text-align: center;
+}
+
+#my-info .studies .title {
+	display: block;
+	width: 100%;
+}
+
+#my-info .studies img {
+	background-color: #fff;
+	margin: auto;
+}
+/*segunda columna knowledge*/
+.knowledge>div>div{
+	text-align: center;
+}
+.knowledge .programming-languages{
+	/*margin-top: 20px;*/
+}
+.knowledge > div > div > span{
+	display: block;
+	width: 100%;
+}
+
+.knowledge > div > div > span:first-child{
+	line-height: 50px;
+}
+
+.knowledge .frameworks{
+	/*margin-top: 30px;*/
+}
+
+/*tercera columna skills and qualities*/
+.skills-qualities{
+	display: flex;
+	flex: column;
+}
+.skills-qualities ul{
+	width: 100%;
+	padding: 0;
+	font-size: 14pt;
+	font-family: Arial;
+}
+
+.skills-qualities ul li:first-child{
+	font-weight: bold;
+}
+
+.skills-qualities ul li{
+	list-style: none;
+	text-align: center;
+}
+
+/*lineas divisoras*/
+div#my-info{
+	/*height: 100%;*/
+	/*height: 400px !important;*/
+}
+
+div#my-info{
+	height: auto;
+}
+div#my-info div.columns{
+	/*height: auto;*/
+}
+
+
+div#my-info div.columns>label{
+	display: block;
+	margin-top: 3%;
+	height: auto;
+	width:3px;
+	background-color: white;
+}
+
+@media screen and (max-width: 1240px) {
+	div#my-info div.columns>label.second{
+		display : none ;
+		width   : 0px ;
+		height  : 0px ;
+		margin  : 0 ;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	div#my-info div.columns>label.first{
+		display : none ;
+		width   : 0px ;
+		height  : 0px ;
+		margin  : 0 ;
+	}
+}

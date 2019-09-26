@@ -1,5 +1,10 @@
 # $ git status
 
+assets/proyectos/*
+assets/wireframesProjects/*
+!DERECHOS*.png
+
+
 # Untracked files:
 
 #       Documentation/foo.html
@@ -13,7 +18,9 @@ $ cat .git/info/exclude
 $ cat Documentation/.gitignore
 # ignore generated html files,
 # *.html
-assets/proyectos/*
+
+
+
 # except foo.html which is maintained by hand
 # !foo.html
 $ git status

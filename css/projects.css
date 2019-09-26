@@ -1,0 +1,180 @@
+div.references.column{
+	display: flex;
+	flex-direction: column;
+}
+
+div.references.column span.title {
+	margin: auto;
+	color: #AA5688;
+	font-size: 18pt;
+	letter-spacing: 3px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.img-project{
+	display: block;
+	margin: 15px 0;
+	height: 300px;
+	width: auto;
+	min-width: 400px;
+	min-height: 250px;
+}
+
+.details.column{
+	height: 500px;
+}
+
+div.references.column, div.details.column {
+	display: flex;
+	flex-direction: column;
+}
+
+/*References Column Styles*/
+.companies{
+	width: 100%;
+	display: block;
+}
+
+.companies ul{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around ;
+	/*justify-content: space-center;*/
+}
+
+.companies ul li{
+	/*background-color: #0f0;*/
+	list-style: none;
+	min-width: 120px;
+}
+
+.companies ul li>img{
+	height: 50px;
+	width: auto;
+	margin: auto;
+}
+
+.references .companies ul li>img{
+	height: 30px;
+}
+
+/*Details Column Styles*/
+.details{
+	display: block;
+}
+
+.especifications li.job-title,
+.job-title {
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+.especifications li.work-date {
+	float: right;
+	text-align: right;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 9pt;
+	color: blue;
+}
+
+
+.references .especifications, 
+.details .especifications{
+	width: 100%;
+	display: flex;
+	margin: 8px 0;
+	height: 50px;
+	max-height: 80px;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-inline-start: 0px;
+}
+
+.details .especifications{
+	justify-content: flex-end;
+}
+
+.details .especifications img{
+	margin-left: 7px;
+	height: auto;
+	max-width: 160px;
+	max-height: 50px
+}
+
+ul.especifications li {
+	list-style: none;
+	/*margin: 5px 25px;
+	min-width: 120px;
+	*/
+	height: 50px;
+	margin: 0;
+	/*padding: 2px 2px 2px 2px solid blue;*/
+	text-align: center;
+	font-family: Arial;
+	/*font-weight: bold;*/
+	font-size: 13pt;
+}
+
+.responsible-for {
+	width: 100%;
+}
+
+.details.column .responsible-for ol li{
+	font-family: Arial;
+	font-size: 13pt;
+	letter-spacing: 1px;
+}
+
+.more-dateils a {
+	display: block;
+	float: right;
+}
+
+#proyectos div .all-width{
+	display: block;
+	width: 80%;
+	height: 3px;
+	background-color: black;
+}
+
+/*title text*/
+div#proyectos div.title,
+div#proyectos1 div.title {
+	margin: 0px 1% 15px 1%;
+	font-family: Arial;
+	font-size: 24pt;
+	text-align: center;
+	display: block;
+	width: 98%;
+}
+
+div#proyectos1 div.title {
+	margin: 40px 1% 15px 1%;
+}
+
+/*Formato 2 presentación*/
+#proyectos1{
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#proyectos1 > .FormularioTICPOL2019 ,
+#proyectos1 > .VideoPlataformaTICPOL2018 ,
+#proyectos1 > .OM20172018 ,
+#proyectos1 > .PlataformaTICPOL2017 ,
+#proyectos1 > .OM2016 ,
+#proyectos1 > .EXPLIPOL2016 {
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	border: solid 5px rgba(215, 218, 221, 1);
+	border-radius: 5px;
+}
+
+

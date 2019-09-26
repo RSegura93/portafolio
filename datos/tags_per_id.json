@@ -1,0 +1,165 @@
+tagsProjects = {
+	"FormularioTICPOL2019" : [
+		"year2019",
+		"companyTICPOL",
+		"frameworkCodeIgniter",
+		"chargeAnalista", "chargeDesBack-end", "DesFront-end",
+		"plJavaScript", "plPHP", "plSQL", "plHTML", "plCSS"
+	],
+	"VideoPlataformaTICPOL2018" : [
+		"year2018",
+		"companyTICPOL",
+		"frameworkCodeIgniter",
+		"chargeDisenadorDB", "chargeAnalista", "chargeDesBack-end", "chargeDesFront-end",
+		"plJavaScript", "plPHP", "plSQL", "plHTML", "plCSS"
+	],
+	"OM20172018" : [
+		"year2017", "year2018",
+		"companyGRUPOAVATAR",
+		"frameworkLaravel", "frameworkAngular",
+		"chargeDisenadorDB", "chargeAnalista", "chargeDesBack-end", "chargeDesFront-end", "chargeLider",
+		"plJavaScript", "plPHP", "plSQL", "plHTML", "plTypeScript"
+	],
+	"PlataformaTICPOL2017" : [
+		"year2017", "year2018",
+		"companyTICPOL",
+		"frameworkCodeIgniter",
+		"chargeDisenadorDB", "chargeAnalista", "chargeDesBack-end", "chargeDesFront-end", "chargeLider", "chargeGestor",
+		"plJavaScript", "plPHP", "plSQL", "plHTML", "plCSS"
+	],
+	"OM2016" : [
+		"year2016",
+		"companyGRUPOAVATAR",
+		"frameworkCodeIgniter",
+		"chargeAnalista", "chargeDesBack-end", "chargeDesFront-end",
+		"plJavaScript", "plPHP", "plSQL", "plHTML", "plCSS"
+	],
+	"EXPLIPOL2016" : [
+		"year2016",
+		"companyTICPOL",
+		"frameworkCodeIgniter",
+		"chargeDisenadorDB", "chargeAnalista", "chargeDesBack-end", "chargeDesFront-end",
+		"plJavaScript", "plPHP", "plSQL", "plHTML", "plCSS"
+	]
+}
+
+orderDataProjects = {
+	"FormularioTICPOL2019" : {
+		"date-start" : "20190301",
+		"date-end"   : "20190531"
+	},
+	"VideoPlataformaTICPOL2018" : {
+		"date-start" : "20180501",
+		"date-end"   : "20181131"
+	},
+	"OM20172018" : {
+		"date-start" : "20170501",
+		"date-end"   : "20180531"
+	},
+	"PlataformaTICPOL2017" : {
+		"date-start" : "20170101",
+		"date-end"   : "20180431"
+	},
+	"OM2016" : {
+		"date-start" : "20160801",
+		"date-end"   : "20161231"
+	},
+	"EXPLIPOL2016" : {
+		"date-start" : "20160801",
+		"date-end"   : "20161231"
+	}
+}
+
+dataProjectsCV = [
+{//AGREGARCV
+	"fechas": "03/2019 - 05/2019",
+	"tipoT": "Tiempo completo",
+	"cargo": "Desarrollador PHP Full-Stack",
+	"nombreP": "Proyecto educativo-tecnológico Explipol de TIC POL"
+},{
+	"fechas": "05/2018 - 11/2018",
+	"tipoT": "Tiempo completo",
+	"cargo": "Desarrollador PHP Full-Stack en CodeIgniter",
+	"nombreP": "Proyecto educativo-tecnológico Explipol de TIC POL"
+},{
+	"fechas"  : "01/2017 - 05/2018",
+	"tipoT"   : "Tiempo parcial",
+	"cargo"   : "Desarrollador PHP Full-Stack en Angular y Responsable del Editor Gráfico web",
+	"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico del GRUPO AVATAR PUCP"		
+},{//AGREGAR
+	"fechas"  : "01/2017 - 04/2018",
+	"tipoT"   : "Tiempo completo",
+	"cargo"   : "Desarrollor Full-Stack en CodeIgniter y Líder del proyecto",
+	"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL"
+},{
+	"fechas"  : "08/2016 - 12/2016",
+	"tipoT"   : "Tiempo completo",
+	"cargo"   : "Desarrollor Full-Stack en CodeIgniter",
+	"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico 2016 del GRUPO AVATAR PUCP"
+},{
+	"fechas"  : "08/2016 - 12/2016",
+	"tipoT"   : "Tiempo parcial",
+	"cargo"   : "Desarrollador PHP Full-Stack en CodeIgniter",
+	"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL"
+}
+]
+
+
+//MERGE
+mergeDataprojects = [
+{//AGREGARCV
+	"fechasCV": "03/2019 - 05/2019",
+	"tipoTCV": "Tiempo completo",
+	"cargoCV": "Desarrollador PHP Full-Stack en CodeIgniter",
+	"nombrePCV": "Proyecto educativo-tecnológico Explipol de TIC POL",
+	// DATOS WEB
+	"fechasWB"  : "Marzo a Mayo 2019",
+	"cargoWB"   : "Desarrollador PHP Full Stack",
+	"nombrePWB" : "Proyecto Explipol 2019"
+},{
+	"fechasCV": "05/2018 - 11/2018",
+	"tipoTCV": "Tiempo completo",
+	"cargoCV": "Desarrollador PHP Full-Stack en CodeIgniter",
+	"nombrePCV": "Proyecto educativo-tecnológico Explipol de TIC POL",
+	// DATOS WEB
+	"fechasWB"  : "Mayo a Noviembre 2018",
+	"cargoWB"   : "Desarrollador PHP Full Stack",
+	"nombrePWB" : "Proyecto Explipol 2018"		
+},{
+	"fechasCV"  : "01/2017 - 05/2018",
+	"tipoTCV"   : "Tiempo parcial",
+	"cargoCV"   : "Desarrollador Full-Stack en Angular y Responsable del EditorCV Gráfico web",
+	"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico del GRUPO AVATAR PUCP",
+	// DATOS WEB
+	"fechasWB"  :  "Enero 2017 a Mayo 2018",
+	"cargoWB"   :  "Desarrollador Full-Stack y Responsable del  Editor Gráfico",
+	"nombrePWB" :  "Proyecto Oráculo Matemágico"
+},{//AGREGAR
+	"fechasCV"  : "01/2017 - 04/2018",
+	"tipoTCV"   : "Tiempo completo",
+	"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter y Líder del proyecto",
+	"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL",
+	// DATOS WEB
+	"fechasWB"  : "Enero del 2017 a Abril del 2018",
+	"cargoWB"   : "Desarrollador PHP Full-Stack Y Líder del proyecto",
+	"nombrePWB" : "Proyecto Explipol 2017"
+},{
+	"fechasCV"  : "08/2016 - 12/2016",
+	"tipoTCV"   : "Tiempo completo",
+	"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter",
+	"nombrePCV" : "Proyecto educativo-tecnológico Oráculo Matemágico 2016 del GRUPO AVATAR PUCP",
+	// DATOS WEB
+	"fechasWB"  : "Agosto a Diciembre del 2016",
+	"cargoWB"   : "Desarrollador PHP Full-Stack",
+	"nombrePWB" : "Proyecto Oráculo Matemágico"
+},{
+	"fechasCV"  : "08/2016 - 12/2016",
+	"tipoTCV"   : "Tiempo completo",
+	"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter",
+	"nombrePCV" : "Proyecto educativo-tecnológico Explipol de TIC POL",
+	// DATOS WEB
+	"fechasWB"  : "Agosto a Diciembre del 2016",
+	"cargoWB"   : "Desarrollador PHP Full Stack",
+	"nombrePWB" : "Proyecto Explipol 2016"
+}
+]
