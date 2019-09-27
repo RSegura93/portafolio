@@ -14,11 +14,16 @@ div.references.column span.title {
 
 .img-project{
 	display: block;
-	margin: 15px 0;
-	height: 300px;
+	margin: 15px auto;
 	width: auto;
-	min-width: 400px;
-	min-height: 250px;
+	height: auto;
+	max-height: 250px !important;
+}
+
+@media screen and (max-width: 600px) {
+	.img-project{
+		width: 400px;
+	}
 }
 
 .details.column{
@@ -173,8 +178,11 @@ div#proyectos1 div.title {
 #proyectos1 > .EXPLIPOL2016 {
 	margin-bottom: 20px;
 	padding: 10px 20px;
-	border: solid 5px rgba(215, 218, 221, 1);
-	border-radius: 5px;
+	border: solid 2px rgba(250, 251, 251, 1);
+	/*background-color: rgba(250, 251, 251, 1);*/
+	background-color: rgba(247, 248, 249, 1);
+	border-radius: 8px;
+	max-width: 95%;
 }
 
 
