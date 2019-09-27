@@ -74,3 +74,8 @@ label.home{
 .footer-menu li label{
 	float:left;
 }
+
+.footer-menu li span:hover,
+.footer-menu li label:hover{
+	cursor: pointer;
+}

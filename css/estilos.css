@@ -109,3 +109,13 @@ ul {
 .opaco{
 	opacity: 0;
 }
+
+#info .btn1 a,
+.top-menu .logo a{
+	color: inherit;
+}
+
+#info .btn1 a:hover,
+.top-menu .logo a:hover{
+	text-decoration: inherit;
+}

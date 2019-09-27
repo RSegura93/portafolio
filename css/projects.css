@@ -147,6 +147,11 @@ ul.especifications li {
 	background-color: black;
 }
 
+#proyectos div:last-child > .all-width{
+	display : none;
+	width   : 0%;
+	height  : 0;
+}
 /*title text*/
 div#proyectos div.title,
 div#proyectos1 div.title {

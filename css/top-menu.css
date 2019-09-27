@@ -9,6 +9,7 @@
 	font-family : Arial;
 	font-weight : 700;
 }
+
 .top-menu .menu {
 	float             : right;
 	width             : 80px;
@@ -19,7 +20,7 @@
 	cursor            : pointer;
 }
 .top-menu .menu:hover {
-	background-image  : url("../assets/icon-menu-hover.png");
+	background-image  : url("../assets/icons/icon-menu-hover.png");
 }
 
 .top-menu .menu ul {
