@@ -28,6 +28,7 @@ div.references.column span.title {
 
 .details.column{
 	height: 500px;
+	width: 400px;
 }
 
 div.references.column, div.details.column {

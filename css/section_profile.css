@@ -47,7 +47,7 @@ div.profile.boxFlex, div.buttons.boxFlex {
 	animation-duration: 4s;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 751px) {
 	.buttons.boxFlex .btn1:first-child::before,
 	.buttons.boxFlex .btn1:last-child::after,
 	.buttons.boxFlex .btn1:first-child:hover::after,
@@ -92,7 +92,7 @@ div.profile.boxFlex, div.buttons.boxFlex {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 	.buttons.boxFlex{
 		margin-top: 40px;
 		margin-bottom: 80px;
