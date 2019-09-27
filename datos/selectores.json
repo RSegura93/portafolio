@@ -1,3 +1,4 @@
+// Datos de el formulario de filtrado de Proyectos
 formsProjects = {
 	"presentacion" : {
 		"detallado" : "En detalle",
@@ -47,6 +48,8 @@ formsProjects = {
 	}
 }
 
+// los prefijos de los valores del tag dependiendo
+// por el parametro que se busque
 prefijoValuesForm = {
 	"year"                : "year",
 	"company"             : "company",
@@ -55,6 +58,8 @@ prefijoValuesForm = {
 	"programminglanguage" : "pl"
 }
 
+// valores textuales que se mostrarán en
+// el dropdown de selección
 valoresTextSelect = {
 	"year"                : "Año",
 	"company"             : "Empresa",
@@ -64,31 +69,31 @@ valoresTextSelect = {
 }
 
 
-
+// Datos del proyecto web y CV
 dataProjectsWeb = [
-{
-	"fechasWB"  : "Marzo a Mayo 2019",
-	"cargoWB"   : "Desarrollador Full-Stack",
-	"nombrePWB" : "Proy. Explipol 2019"
-},{
-	"fechasWB"  : "Mayo a Noviembre 2018",
-	"cargoWB"   : "Desarrollador Full-Stack",
-	"nombrePWB" : "Proy. Explipol 2018"		
-},{
-	"fechasWB"  :  "Enero 2017 a Mayo 2018",
-	"cargoWB"   :  "Desarrollador Full-Stack y Responsable del  Editor Gráfico",
-	"nombrePWB" :  "Proy. Oráculo Matemágico"
-},{
-	"fechasWB"  : "Enero del 2017 a Abril del 2018",
-	"cargoWB"   : "Desarrollador Full-Stack Y Líder del proyecto",
-	"nombrePWB" : "Proy. Explipol 2017"
-},{
-	"fechasWB"  : "Agosto a Diciembre del 2016",
-	"cargoWB"   : "Desarrollor Full-Stack en CodeIgniter",
-	"nombrePWB" : "Proy. Oráculo Matemágico"
-},{
-	"fechasWB"  : "Agosto a Diciembre del 2016",
-	"cargoWB"   : "Desarrollador Full-Stack",
-	"nombrePWB" : "Proy. Explipol 2016"
-}
+	{
+		"fechasWB"  : "Marzo a Mayo 2019",
+		"cargoWB"   : "Desarrollador Full-Stack",
+		"nombrePWB" : "Proy. Explipol 2019"
+	},{
+		"fechasWB"  : "Mayo a Noviembre 2018",
+		"cargoWB"   : "Desarrollador Full-Stack",
+		"nombrePWB" : "Proy. Explipol 2018"		
+	},{
+		"fechasWB"  :  "Enero 2017 a Mayo 2018",
+		"cargoWB"   :  "Desarrollador Full-Stack y Responsable del  Editor Gráfico",
+		"nombrePWB" :  "Proy. Oráculo Matemágico"
+	},{
+		"fechasWB"  : "Enero del 2017 a Abril del 2018",
+		"cargoWB"   : "Desarrollador Full-Stack Y Líder del proyecto",
+		"nombrePWB" : "Proy. Explipol 2017"
+	},{
+		"fechasWB"  : "Agosto a Diciembre del 2016",
+		"cargoWB"   : "Desarrollor Full-Stack en CodeIgniter",
+		"nombrePWB" : "Proy. Oráculo Matemágico"
+	},{
+		"fechasWB"  : "Agosto a Diciembre del 2016",
+		"cargoWB"   : "Desarrollador Full-Stack",
+		"nombrePWB" : "Proy. Explipol 2016"
+	}
 ]

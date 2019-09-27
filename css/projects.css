@@ -47,11 +47,9 @@ div.references.column, div.details.column {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around ;
-	/*justify-content: space-center;*/
 }
 
 .companies ul li{
-	/*background-color: #0f0;*/
 	list-style: none;
 	min-width: 120px;
 }
@@ -114,15 +112,10 @@ div.references.column, div.details.column {
 
 ul.especifications li {
 	list-style: none;
-	/*margin: 5px 25px;
-	min-width: 120px;
-	*/
 	height: 50px;
 	margin: 0;
-	/*padding: 2px 2px 2px 2px solid blue;*/
 	text-align: center;
 	font-family: Arial;
-	/*font-weight: bold;*/
 	font-size: 13pt;
 }
 
@@ -185,7 +178,6 @@ div#proyectos1 div.title {
 	margin-bottom: 20px;
 	padding: 10px 20px;
 	border: solid 2px rgba(250, 251, 251, 1);
-	/*background-color: rgba(250, 251, 251, 1);*/
 	background-color: rgba(247, 248, 249, 1);
 	border-radius: 8px;
 	max-width: 95%;

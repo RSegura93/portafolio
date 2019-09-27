@@ -83,8 +83,6 @@ function updateShowFormBy ( ) {
 	});
 
 	function changeFormShowedBy( selectDiv, prefClass) {
-		// console.log($(this));
-		// console.log( prefClass );
 		var valuesToFilter = getValuesForm( selectDiv );
 		updateProjects( prefClass, valuesToFilter );
 	}
@@ -159,28 +157,13 @@ function handlerEventOrderProjects() {
 
 		// show in that order in 
 		for ( var idPro = objectToOrder.length-1; idPro > -1 ; idPro -- ) {
-			// if( projectsContainer == null ){
-			// 	projectsContainer = objectToOrder[idPro].container.parent();
-			// 	projectsContainer = objectToOrder[idPro].container.parent();
-			// }
-			// projectsContainer.prepend ( objectToOrder[idPro].container );
-			// projectsContainer.prepend ( objectToOrder[idPro].container );
 			selectores.after ( objectToOrder[idPro].container );
 		}
 	}
 	orderSelect.change( updateOrderProjects );
 	dateSelect.change( updateOrderProjects );
-	// #proyectos.section
-	// 	div.selectores
-	// 				select.ordenar
-	// 				select.fecha
+	
 }
-// #proyectos
-// 	.selectores
-// 		.column
-// 			div
-// 				select.mostrar.selectpicker
-// 				div.selectsByParameter
 
 function addSelectors(){
 	// formsProjects
@@ -250,12 +233,3 @@ function handlerEventPresentationFormat() {
 	}
 	formatPresSelect.change( updatePresentationProjects );
 }
-
-aborrar=function(){
-	console.log(
-		"rgba ("+
-			(52 + 4*255)/5 + ", " + 
-			(69 + 4*255	)/5 + ", " + 
-			(85 + 4*255)/5 + ") "
-	);
-}();

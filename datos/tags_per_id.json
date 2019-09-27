@@ -1,3 +1,4 @@
+// TAGS AÑADIDOS POR PROYECTO Y SU ID
 tagsProjects = {
 	"FormularioTICPOL2019" : [
 		"year2019",
@@ -43,6 +44,7 @@ tagsProjects = {
 	]
 }
 
+// START AND END DATE PER PROJECT
 orderDataProjects = {
 	"FormularioTICPOL2019" : {
 		"date-start" : "20190301",
@@ -70,96 +72,97 @@ orderDataProjects = {
 	}
 }
 
+// DATA CV
 dataProjectsCV = [
-{//AGREGARCV
-	"fechas": "03/2019 - 05/2019",
-	"tipoT": "Tiempo completo",
-	"cargo": "Desarrollador PHP Full-Stack",
-	"nombreP": "Proyecto educativo-tecnológico Explipol de TIC POL"
-},{
-	"fechas": "05/2018 - 11/2018",
-	"tipoT": "Tiempo completo",
-	"cargo": "Desarrollador PHP Full-Stack en CodeIgniter",
-	"nombreP": "Proyecto educativo-tecnológico Explipol de TIC POL"
-},{
-	"fechas"  : "01/2017 - 05/2018",
-	"tipoT"   : "Tiempo parcial",
-	"cargo"   : "Desarrollador PHP Full-Stack en Angular y Responsable del Editor Gráfico web",
-	"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico del GRUPO AVATAR PUCP"		
-},{//AGREGAR
-	"fechas"  : "01/2017 - 04/2018",
-	"tipoT"   : "Tiempo completo",
-	"cargo"   : "Desarrollor Full-Stack en CodeIgniter y Líder del proyecto",
-	"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL"
-},{
-	"fechas"  : "08/2016 - 12/2016",
-	"tipoT"   : "Tiempo completo",
-	"cargo"   : "Desarrollor Full-Stack en CodeIgniter",
-	"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico 2016 del GRUPO AVATAR PUCP"
-},{
-	"fechas"  : "08/2016 - 12/2016",
-	"tipoT"   : "Tiempo parcial",
-	"cargo"   : "Desarrollador PHP Full-Stack en CodeIgniter",
-	"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL"
-}
+	{
+		"fechas": "03/2019 - 05/2019",
+		"tipoT": "Tiempo completo",
+		"cargo": "Desarrollador PHP Full-Stack",
+		"nombreP": "Proyecto educativo-tecnológico Explipol de TIC POL"
+	},{
+		"fechas": "05/2018 - 11/2018",
+		"tipoT": "Tiempo completo",
+		"cargo": "Desarrollador PHP Full-Stack en CodeIgniter",
+		"nombreP": "Proyecto educativo-tecnológico Explipol de TIC POL"
+	},{
+		"fechas"  : "01/2017 - 05/2018",
+		"tipoT"   : "Tiempo parcial",
+		"cargo"   : "Desarrollador PHP Full-Stack en Angular y Responsable del Editor Gráfico web",
+		"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico del GRUPO AVATAR PUCP"		
+	},{
+		"fechas"  : "01/2017 - 04/2018",
+		"tipoT"   : "Tiempo completo",
+		"cargo"   : "Desarrollor Full-Stack en CodeIgniter y Líder del proyecto",
+		"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL"
+	},{
+		"fechas"  : "08/2016 - 12/2016",
+		"tipoT"   : "Tiempo completo",
+		"cargo"   : "Desarrollor Full-Stack en CodeIgniter",
+		"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico 2016 del GRUPO AVATAR PUCP"
+	},{
+		"fechas"  : "08/2016 - 12/2016",
+		"tipoT"   : "Tiempo parcial",
+		"cargo"   : "Desarrollador PHP Full-Stack en CodeIgniter",
+		"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL"
+	}
 ]
 
 
 //MERGE
 mergeDataprojects = [
-{//AGREGARCV
-	"fechasCV": "03/2019 - 05/2019",
-	"tipoTCV": "Tiempo completo",
-	"cargoCV": "Desarrollador PHP Full-Stack en CodeIgniter",
-	"nombrePCV": "Proyecto educativo-tecnológico Explipol de TIC POL",
-	// DATOS WEB
-	"fechasWB"  : "Marzo a Mayo 2019",
-	"cargoWB"   : "Desarrollador PHP Full Stack",
-	"nombrePWB" : "Proyecto Explipol 2019"
-},{
-	"fechasCV": "05/2018 - 11/2018",
-	"tipoTCV": "Tiempo completo",
-	"cargoCV": "Desarrollador PHP Full-Stack en CodeIgniter",
-	"nombrePCV": "Proyecto educativo-tecnológico Explipol de TIC POL",
-	// DATOS WEB
-	"fechasWB"  : "Mayo a Noviembre 2018",
-	"cargoWB"   : "Desarrollador PHP Full Stack",
-	"nombrePWB" : "Proyecto Explipol 2018"		
-},{
-	"fechasCV"  : "01/2017 - 05/2018",
-	"tipoTCV"   : "Tiempo parcial",
-	"cargoCV"   : "Desarrollador Full-Stack en Angular y Responsable del EditorCV Gráfico web",
-	"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico del GRUPO AVATAR PUCP",
-	// DATOS WEB
-	"fechasWB"  :  "Enero 2017 a Mayo 2018",
-	"cargoWB"   :  "Desarrollador Full-Stack y Responsable del  Editor Gráfico",
-	"nombrePWB" :  "Proyecto Oráculo Matemágico"
-},{//AGREGAR
-	"fechasCV"  : "01/2017 - 04/2018",
-	"tipoTCV"   : "Tiempo completo",
-	"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter y Líder del proyecto",
-	"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL",
-	// DATOS WEB
-	"fechasWB"  : "Enero del 2017 a Abril del 2018",
-	"cargoWB"   : "Desarrollador PHP Full-Stack Y Líder del proyecto",
-	"nombrePWB" : "Proyecto Explipol 2017"
-},{
-	"fechasCV"  : "08/2016 - 12/2016",
-	"tipoTCV"   : "Tiempo completo",
-	"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter",
-	"nombrePCV" : "Proyecto educativo-tecnológico Oráculo Matemágico 2016 del GRUPO AVATAR PUCP",
-	// DATOS WEB
-	"fechasWB"  : "Agosto a Diciembre del 2016",
-	"cargoWB"   : "Desarrollador PHP Full-Stack",
-	"nombrePWB" : "Proyecto Oráculo Matemágico"
-},{
-	"fechasCV"  : "08/2016 - 12/2016",
-	"tipoTCV"   : "Tiempo completo",
-	"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter",
-	"nombrePCV" : "Proyecto educativo-tecnológico Explipol de TIC POL",
-	// DATOS WEB
-	"fechasWB"  : "Agosto a Diciembre del 2016",
-	"cargoWB"   : "Desarrollador PHP Full Stack",
-	"nombrePWB" : "Proyecto Explipol 2016"
-}
+	{
+		"fechasCV": "03/2019 - 05/2019",
+		"tipoTCV": "Tiempo completo",
+		"cargoCV": "Desarrollador PHP Full-Stack en CodeIgniter",
+		"nombrePCV": "Proyecto educativo-tecnológico Explipol de TIC POL",
+		// DATOS WEB
+		"fechasWB"  : "Marzo a Mayo 2019",
+		"cargoWB"   : "Desarrollador PHP Full Stack",
+		"nombrePWB" : "Proyecto Explipol 2019"
+	},{
+		"fechasCV": "05/2018 - 11/2018",
+		"tipoTCV": "Tiempo completo",
+		"cargoCV": "Desarrollador PHP Full-Stack en CodeIgniter",
+		"nombrePCV": "Proyecto educativo-tecnológico Explipol de TIC POL",
+		// DATOS WEB
+		"fechasWB"  : "Mayo a Noviembre 2018",
+		"cargoWB"   : "Desarrollador PHP Full Stack",
+		"nombrePWB" : "Proyecto Explipol 2018"		
+	},{
+		"fechasCV"  : "01/2017 - 05/2018",
+		"tipoTCV"   : "Tiempo parcial",
+		"cargoCV"   : "Desarrollador Full-Stack en Angular y Responsable del EditorCV Gráfico web",
+		"nombreP" : "Proyecto educativo-tecnológico Oráculo Matemágico del GRUPO AVATAR PUCP",
+		// DATOS WEB
+		"fechasWB"  :  "Enero 2017 a Mayo 2018",
+		"cargoWB"   :  "Desarrollador Full-Stack y Responsable del  Editor Gráfico",
+		"nombrePWB" :  "Proyecto Oráculo Matemágico"
+	},{
+		"fechasCV"  : "01/2017 - 04/2018",
+		"tipoTCV"   : "Tiempo completo",
+		"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter y Líder del proyecto",
+		"nombreP" : "Proyecto educativo-tecnológico Explipol de TIC POL",
+		// DATOS WEB
+		"fechasWB"  : "Enero del 2017 a Abril del 2018",
+		"cargoWB"   : "Desarrollador PHP Full-Stack Y Líder del proyecto",
+		"nombrePWB" : "Proyecto Explipol 2017"
+	},{
+		"fechasCV"  : "08/2016 - 12/2016",
+		"tipoTCV"   : "Tiempo completo",
+		"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter",
+		"nombrePCV" : "Proyecto educativo-tecnológico Oráculo Matemágico 2016 del GRUPO AVATAR PUCP",
+		// DATOS WEB
+		"fechasWB"  : "Agosto a Diciembre del 2016",
+		"cargoWB"   : "Desarrollador PHP Full-Stack",
+		"nombrePWB" : "Proyecto Oráculo Matemágico"
+	},{
+		"fechasCV"  : "08/2016 - 12/2016",
+		"tipoTCV"   : "Tiempo completo",
+		"cargoCV"   : "Desarrollador PHP Full-Stack en CodeIgniter",
+		"nombrePCV" : "Proyecto educativo-tecnológico Explipol de TIC POL",
+		// DATOS WEB
+		"fechasWB"  : "Agosto a Diciembre del 2016",
+		"cargoWB"   : "Desarrollador PHP Full Stack",
+		"nombrePWB" : "Proyecto Explipol 2016"
+	}
 ]

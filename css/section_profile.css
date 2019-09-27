@@ -15,7 +15,6 @@
 	font-size: 24pt;
 	letter-spacing: 3px;
 	text-align: center;
-	/*color: #1D2E5B;*/
 	color: white;
 }
 
@@ -55,7 +54,6 @@ div.profile.boxFlex, div.buttons.boxFlex {
 		content: "";
 		display: block;
 		background: url(linea_horizontal blanca.svg) no-repeat;
-		/*#CCC*/
 		width: 100%;
 		height: 3px;
 		background-color: white;

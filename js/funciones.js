@@ -1,21 +1,14 @@
 window.onload = function(){
-	// $(".top-menu .menu
-	// $(".top-menu .menu").on("click",function(){
-	$(".top-menu .menu").hover( function(){
-		var desplegable = $(this).find("ul");
-		if( desplegable.hasClass("hidden") ){
-			desplegable.removeClass("hidden")
-		}else{
-			$(this).find("ul").addClass("hidden");
-		}
-	});
-
 	// start selectPicker from bootstrap
 	addSelectors();
 	$('.selectpicker').selectpicker();
-	// getValuesForm();
+	
+	// update data from projects
 	addTagstoProjects();
 	updateShowFormBy ( );
+
+	// handler events 
+	handlerTopMenu();
 	handlerEventOrderProjects();
 	handlerEventPresentationFormat();
 	handlerContactList();
@@ -35,11 +28,21 @@ function linkToContact( type ){
 	}
 }
 
-
 function handlerContactList(){
 	$(".footer-menu ul>li").click(function(){
 		var type = $(this).find("label").
 					attr("class").replace("icon ", "");
 		linkToContact ( type );
 	})
+}
+
+function handlerTopMenu(){
+	$(".top-menu .menu").hover( function(){
+		var desplegable = $(this).find("ul");
+		if( desplegable.hasClass("hidden") ){
+			desplegable.removeClass("hidden")
+		}else{
+			$(this).find("ul").addClass("hidden");
+		}
+	});
 }

@@ -26,7 +26,8 @@
 .top-menu .menu ul {
 	position : relative;
 	top      : 50px;
-	right    : 70px;/*LI[width=150px] - MENU[width=80px]*/
+	/*LI[width=150px] - MENU[width=80px]*/
+	right    : 70px;
 }
 
 .top-menu .menu ul li {
