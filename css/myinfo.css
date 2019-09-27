@@ -122,14 +122,20 @@ div#my-info div.columns>label{
 		height  : 0px ;
 		margin  : 0 ;
 	}
-}
-
-
-@media screen and (max-width: 800px) {
 	div#my-info div.columns>label.first{
 		display : none ;
 		width   : 0px ;
 		height  : 0px ;
 		margin  : 0 ;
+	}
+	div#my-info div.columns>div.column.class-flex{
+		width: 85%;
+	}
+
+	div#my-info .studies.column{
+		justify-content: space-around;
+	}
+	div#my-info .studies.column>div{
+		max-width: 400px;
 	}
 }
