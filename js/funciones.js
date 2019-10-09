@@ -16,6 +16,7 @@ window.onload = function() {
 	addTagstoProjects();
 	updateShowFormBy();
 
+	startAnimation();
 	// handler events 
 	handlerTopMenu();
 	handlerEventOrderProjects();
@@ -55,3 +56,24 @@ function handlerTopMenu() {
 		}
 	});
 }
+
+function startAnimation(){
+	var opaco = "opaco";
+	var bouncing ="bounce-2";
+	var photo = $("#info #photo");
+	var proyButton = $($("#info .buttons .btn1")[0]);
+	var knowButton = $($("#info .buttons .btn1")[1]);
+	(function start(){
+		photo.removeClass(opaco);
+		photo.addClass(bouncing);
+		setTimeout(function(){
+			proyButton.removeClass(opaco);
+			proyButton.addClass(bouncing);
+			setTimeout(function(){
+				knowButton.removeClass(opaco);
+				knowButton.addClass(bouncing);
+			}, 2000);
+		}, 2000);
+	})();
+}
+

@@ -1,13 +1,35 @@
 #photo{
-	display: block;
-	margin: auto;
-	min-width: 200px;
-	min-height: 200px;
+	/*display: block;*/
+	/*margin: auto;*/
+	width: 200px;
+	height: 200px;
 	background-image: url("../assets/icons/Perfil_2019_B.png");
 	background-size: 150px 150px, cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+
+    animation-duration: 2s;
+    align-self: flex-end;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
 }
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+    0%   { opacity: 0; transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { opacity: 100; transform: translateY(0); }
+}
+
+@-webkit-keyframes bounce-2 {
+	0%   { opacity: 0; transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { opacity: 100; transform: translateY(0); }
+}
+
 .profile span.title{
 	display: block;
 	margin: auto;
@@ -38,6 +60,12 @@ div.profile.boxFlex, div.buttons.boxFlex {
    -webkit-text-fill-color: white;
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: #CCC;
+
+   	animation-duration: 2s;
+    /*align-self: flex-end;*/
+    position: relative;
+    /*margin: 0 auto 0 auto;*/
+    transform-origin: bottom;
 }
 .buttons.boxFlex .btn1:hover {
 	cursor: pointer;
