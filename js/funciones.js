@@ -17,6 +17,8 @@ window.onload = function() {
 	updateShowFormBy();
 
 	startAnimation();
+
+	showingCV();
 	// handler events 
 	handlerTopMenu();
 	handlerEventOrderProjects();
@@ -35,6 +37,9 @@ function linkToContact(type) {
 		window.open('https://github.com/rsegura93');
 	} else if (type == "home") {
 		location.href = location.href;
+	} else if (type == "cv") {
+		var base_url = location.href.replace(/index.html#{0,1}(.*)/,"");
+		window.open(base_url + "/assets/docs/CV%20RenzoSegura.pdf");
 	}
 }
 
@@ -60,13 +65,17 @@ function handlerTopMenu() {
 function startAnimation(){
 	var opaco = "opaco";
 	var bouncing ="bounce-2";
+	var fadein = "fadein";
 	var photo = $("#info #photo");
+	var cv = $("#info #iconCV");
 	var proyButton = $($("#info .buttons .btn1")[0]);
 	var knowButton = $($("#info .buttons .btn1")[1]);
 	(function start(){
 		photo.removeClass(opaco);
 		photo.addClass(bouncing);
 		setTimeout(function(){
+			cv.addClass(fadein);
+			cv.removeClass(opaco);
 			proyButton.removeClass(opaco);
 			proyButton.addClass(bouncing);
 			setTimeout(function(){
@@ -77,3 +86,11 @@ function startAnimation(){
 	})();
 }
 
+function showingCV(){
+	$("#photo").click(function(){
+		linkToContact("CV");		
+	});
+	$("#iconCV").click(function(){
+		linkToContact("CV");		
+	});
+}

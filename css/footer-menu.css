@@ -39,6 +39,9 @@ label.mail{
 label.home{
 	background-image: url("../assets/icons/icon-home.png");
 }
+label.cv{
+	background-image: url("../assets/icons/icon-cv.png");
+}
 
 .footer-menu > div {
 	margin-right : 10px ;

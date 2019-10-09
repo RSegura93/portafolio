@@ -12,6 +12,43 @@
     align-self: flex-end;
     margin: 0 auto 0 auto;
     transform-origin: bottom;
+	cursor: pointer;
+}
+
+#iconCV{
+	cursor: pointer;
+	/*display: block;*/
+	width: 50px;
+	height: 50px;
+	position: relative;
+	left: 65px;
+	top: 72px;
+
+    align-self: flex-end;
+	background-image: url("../assets/icons/icon-cv.png");
+	background-size: 50px 50px, cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    animation-duration: 1s;
+}
+.fadein{
+    -webkit-animation: fadein 1s ease-in;
+    -moz-animation: fadein 1s ease-in;
+    animation: fadein 1s ease-in;
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .bounce-2 {
