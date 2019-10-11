@@ -16,39 +16,75 @@
 }
 
 #iconCV{
-	cursor: pointer;
-	/*display: block;*/
 	width: 50px;
 	height: 50px;
-	position: relative;
-	left: 65px;
-	top: 72px;
-
-    align-self: flex-end;
+	background-size: 30px 30px, cover;
+	left: 107px;	top: 160px;		    position: relative;
 	background-image: url("../assets/icons/icon-cv.png");
+}
+#iconLaravel{
+	left: 110px;	top: 68px;		    position: relative;
+	background-image: url("../assets/icons/icon-laravel.png");
+}
+#iconAngular{
+	right: 23px;	top: 25px;		    position: relative;
+	background-image: url("../assets/icons/icon-angular.png");
+}
+#iconCodeIgniter{
+	right: 155px;	top: 72px;		    position: relative;
+	background-image: url("../assets/icons/icon-codeigniter.png");
+}
+
+.photoaround{
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
 	background-size: 50px 50px, cover;
+	/*position: relative;*/
+    align-self: flex-end;
 	background-repeat: no-repeat;
 	background-position: center center;
     animation-duration: 1s;
+    /*pointer-events: none; */
 }
-.fadein{
-    -webkit-animation: fadein 1s ease-in;
-    -moz-animation: fadein 1s ease-in;
-    animation: fadein 1s ease-in;
+.fadeout{
+    -webkit-animation: fadeout 1s ease-in forwards;
+    -moz-animation: fadeout 1s ease-in forwards;
+    animation: fadeout 1s ease-in forwards;
 }
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeout {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@-moz-keyframes fadeout {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadein{
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+}
+@-webkit-keyframes fadein {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 .bounce-2 {
@@ -98,7 +134,7 @@ div.profile.boxFlex, div.buttons.boxFlex {
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: #CCC;
 
-   	animation-duration: 2s;
+   	animation-duration: 1s;
     /*align-self: flex-end;*/
     position: relative;
     /*margin: 0 auto 0 auto;*/

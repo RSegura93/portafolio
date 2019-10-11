@@ -40,6 +40,9 @@ function linkToContact(type) {
 	} else if (type == "cv") {
 		var base_url = location.href.replace(/index.html#{0,1}(.*)/,"");
 		window.open(base_url + "/assets/docs/CV%20RenzoSegura.pdf");
+	} else if (type == "#proyectos") {
+		var base_url = location.href.replace(/index.html#{0,1}(.*)/,"index.html");
+		location.href = base_url + "#proyectos";
 	}
 }
 
@@ -48,6 +51,11 @@ function handlerContactList() {
 		var type = $(this).find("label").
 		attr("class").replace("icon ", "");
 		linkToContact(type);
+	});
+	$("#info .photoaround").click(function(){
+		($(this).find("a").length>0)?
+			linkToContact("#proyectos"):
+			(function(){})();
 	});
 }
 
@@ -65,32 +73,49 @@ function handlerTopMenu() {
 function startAnimation(){
 	var opaco = "opaco";
 	var bouncing ="bounce-2";
-	var fadein = "fadein";
 	var photo = $("#info #photo");
-	var cv = $("#info #iconCV");
+	var iconsPhoto = $("#info .photoaround");
 	var proyButton = $($("#info .buttons .btn1")[0]);
 	var knowButton = $($("#info .buttons .btn1")[1]);
 	(function start(){
+		appearingIconsAround(photo, iconsPhoto);
 		photo.removeClass(opaco);
 		photo.addClass(bouncing);
 		setTimeout(function(){
-			cv.addClass(fadein);
-			cv.removeClass(opaco);
 			proyButton.removeClass(opaco);
 			proyButton.addClass(bouncing);
+			knowButton.removeClass(opaco);
+			knowButton.addClass(bouncing);
 			setTimeout(function(){
-				knowButton.removeClass(opaco);
-				knowButton.addClass(bouncing);
-			}, 2000);
+				fadeOut(iconsPhoto);
+				setTimeout(function(){
+					fadeIn(iconsPhoto);
+				},1000);
+			}, 1000);
 		}, 2000);
 	})();
 }
 
+function fadeOut(icons){
+	icons.removeClass("fadein");
+	icons.addClass("fadeout");
+}
+function fadeIn(icons){
+	icons.removeClass("fadeout");
+	icons.addClass("fadein");
+}
+function appearingIconsAround(photo, iconsPhoto){
+	photo.mouseenter(function(){fadeOut(iconsPhoto);});
+	photo.mouseleave(function(){fadeIn(iconsPhoto);});
+	iconsPhoto.mouseenter(function(){fadeOut($(this));});
+	iconsPhoto.mouseleave(function(){fadeIn($(this));});
+}
+
 function showingCV(){
 	$("#photo").click(function(){
-		linkToContact("CV");		
+		linkToContact("cv");
 	});
 	$("#iconCV").click(function(){
-		linkToContact("CV");		
+		linkToContact("cv");		
 	});
 }
