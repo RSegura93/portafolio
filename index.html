@@ -1,516 +1,515 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Portafolio de Renzo Segura</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Portafolio de Renzo Segura</title>
 		
-	<!-- jQuery Library -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+		<!-- jQuery Library -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 		
-	<!-- Bootstrap css styles-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" />
-	<!-- Bootstrap js libraries-->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+		<!-- Bootstrap css styles-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" />
+		<!-- Bootstrap js libraries-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 		
-	<!-- Estilos generales y por sección -->
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" type="text/css" href="css/section_profile.css">
-	<link rel="stylesheet" type="text/css" href="css/top-menu.css">
-	<link rel="stylesheet" type="text/css" href="css/projects.css">
-	<link rel="stylesheet" type="text/css" href="css/myinfo.css">
-	<link rel="stylesheet" type="text/css" href="css/projects_selector.css">
-	<link rel="stylesheet" type="text/css" href="css/footer-menu.css">
-	<!-- Datos en formato JSON para el filtrado de proyectos -->
-	<script type="text/javascript" src="datos/selectores.json"></script>
-	<script type="text/javascript" src="datos/tags_per_id.json"></script>
-	<!-- Procesos de inicio y filtrado de proyectos -->
-	<script type="text/javascript" src="js/funciones.js"></script>
-	<script type="text/javascript" src="js/selectors_process.js"></script>
-	<!-- <script type="text/javascript" src="js/animateplus.js"></script> -->
-</head>
-<body>
-	<div class="top-menu">
-		<div class="logo"><a href="#info">RSegura</a></div>
-		<div class="menu">
-			<ul class="hidden">
-				<li><a class="redirect" href="#info">Perfil</a></li>
-				<li><a class="redirect" href="#proyectos">Proyectos</a></li>
-				<li><a class="redirect" href="#my-info">Estudios y otros</a></li>
-			</ul>
-		</div>
-	</div>
-	<div id="info" class="section">
-		<a class="hidden" name="info"></a>
-		<div class="class-flex">
-			<div class="profile boxFlex">
-				<div class="class-flex">
-					<span id="iconCV" class="photoaround opaco">
-					</span>
-					<span id="iconLaravel" class="photoaround opaco">
-						<a href="#proyectos"></a>
-					</span>
-					<span id="iconAngular" class="photoaround opaco">
-						<a href="#proyectos"></a>
-					</span>
-					<span id="iconCodeIgniter" class="photoaround opaco">
-						<a href="#proyectos"></a>
-					</span>
-				</div>
-				<div id="photo" class="opaco"></div>
-				<span class="title">
-					DESARROLLADOR WEB<br>FULL-STACK
-				</span>
-			</div>
-			<div class="buttons boxFlex">
-				<div class="btn1 opaco"><a href="#proyectos">PROYECTOS</a></div>
-				<div class="btn1 opaco"><a href="#my-info">ESTUDIOS</a></div>
-			</div>
-		</div>
-		<div class="all-width">
-			<span class="sign-name">Renzo Segura M.</span>
-		</div>
-	</div>
-	<div id="proyectos" class="section">
-		<a class="hidden" name="proyectos"></a>
-		<br><br>
-		<div class="title">PROYECTOS</div>
-		<div class="selectores class-flex">
-			<div class="column">
-				<span>Presentación</span>
-				<div>
-					<select class="presentacion selectpicker">
-					</select>
-				</div>
-			</div>
-			<div class="column">
-				<span>Mostrar por</span>
-				<div>
-					<select class="mostrar selectpicker">
-					</select>
-					<div class="selectsByParameter" style="display:inline;">
-						<select class="year selectpicker" active multiple>
-						</select>
-						<select class="hidden company selectpicker" multiple>
-						</select>
-						<select class="hidden framework selectpicker" multiple>
-						</select>
-						<select class="hidden charge selectpicker" multiple>
-						</select>
-						<select class="hidden programminglanguage selectpicker" multiple>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<span>Ordenar por</span>
-				<div>
-					<select class="ordenar selectpicker">
-					</select>
-					<select class="fecha selectpicker">
-					</select>
-				</div>
-			</div>
-			<div class="container hidden">
-				<div class="row">
-					<div class="col-6 col-md-4">
-						<label>Multiple Select</label>
-						<select class="selectpicker" multiple>
-							<option>Toronto</option>
-							<option>Bucharest</option>
-							<option>Paris</option>
-						</select>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="FormularioTICPOL2019 class-flex">
-			<div class="references column">
-				<ul class="especifications">
-					<li class="work-date opaco">Marzo a<br>Mayo 2019</li>
-					<li class="job-title">Desarrollador PHP Full Stack</li>
-					<li class="work-date">Marzo a<br>Mayo 2019</li>
+		<!-- Estilos generales y por sección -->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/section_profile.css">
+		<link rel="stylesheet" type="text/css" href="css/top-menu.css">
+		<link rel="stylesheet" type="text/css" href="css/projects.css">
+		<link rel="stylesheet" type="text/css" href="css/myinfo.css">
+		<link rel="stylesheet" type="text/css" href="css/projects_selector.css">
+		<link rel="stylesheet" type="text/css" href="css/footer-menu.css">
+		<!-- Datos en formato JSON para el filtrado de proyectos -->
+		<script type="text/javascript" src="datos/selectores.json"></script>
+		<script type="text/javascript" src="datos/tags_per_id.json"></script>
+		<!-- Procesos de inicio y filtrado de proyectos -->
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript" src="js/selectors_process.js"></script>
+		<!-- <script type="text/javascript" src="js/animateplus.js"></script> -->
+	</head>
+	<body>
+		<div class="top-menu">
+			<div class="logo"><a href="#info">RSegura</a></div>
+			<div class="menu">
+				<ul class="hidden">
+					<li><a class="redirect" href="#info">Perfil</a></li>
+					<li><a class="redirect" href="#proyectos">Proyectos</a></li>
+					<li><a class="redirect" href="#my-info">Estudios y otros</a></li>
 				</ul>
-				<img class="img-project" src="assets\wireframes Projects\2019-05 TICPOL/DERECHOS - 2019 Modulo_Administrativo_Automatización_ReproducciónVideo 0.png">
-				<div class="companies">
-					<ul class="especifications">
-						<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-						<li class="">
-							<span class="title">
-								Proyecto Explipol 2019
-							</span>
-						</li>
-						<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-					</ul>
+			</div>
+		</div>
+		<div id="info" class="section">
+			<a class="hidden" name="info"></a>
+			<div class="class-flex">
+				<div class="profile boxFlex">
+					<div class="class-flex">
+						<span id="iconCV" class="photoaround opaco">
+						</span>
+						<span id="iconLaravel" class="photoaround opaco">
+							<a href="#proyectos"></a>
+						</span>
+						<span id="iconAngular" class="photoaround opaco">
+							<a href="#proyectos"></a>
+						</span>
+						<span id="iconCodeIgniter" class="photoaround opaco">
+							<a href="#proyectos"></a>
+						</span>
+					</div>
+					<div id="photo" class="opaco"></div>
+					<span class="title">
+						DESARROLLADOR WEB<br>FULL-STACK
+					</span>
+				</div>
+				<div class="buttons boxFlex">
+					<div class="btn1 opaco"><a href="#proyectos">PROYECTOS</a></div>
+					<div class="btn1 opaco"><a href="#my-info">ESTUDIOS</a></div>
 				</div>
 			</div>
-			<div class="details column">
-				<div>
-					<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
-						Servicio para la reproducción automática
-						de Interacciones Educativas mediante
-						procesos de automatización
-					</span>
-					<div class="responsible-for">
-						<ol>
-							<li>Análisis de estructura de datos</li>
-							<li>Servicio administrativo para el ingreso de datos por sistema online</li>
-						</ol>
+			<div class="all-width">
+				<span class="sign-name">Renzo Segura M.</span>
+			</div>
+		</div>
+		<div id="proyectos" class="section">
+			<a class="hidden" name="proyectos"></a>
+			<br><br>
+			<div class="title">PROYECTOS</div>
+			<div class="selectores class-flex">
+				<div class="column">
+					<span>Presentación</span>
+					<div>
+						<select class="presentacion selectpicker">
+						</select>
 					</div>
-					<div class="hidden more-dateils"><a href="#">+ Detalles</a></div>
-					<div class="company">
+				</div>
+				<div class="column">
+					<span>Mostrar por</span>
+					<div>
+						<select class="mostrar selectpicker">
+						</select>
+						<div class="selectsByParameter" style="display:inline;">
+							<select class="year selectpicker" active multiple>
+							</select>
+							<select class="hidden company selectpicker" multiple>
+							</select>
+							<select class="hidden framework selectpicker" multiple>
+							</select>
+							<select class="hidden charge selectpicker" multiple>
+							</select>
+							<select class="hidden programminglanguage selectpicker" multiple>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<span>Ordenar por</span>
+					<div>
+						<select class="ordenar selectpicker">
+						</select>
+						<select class="fecha selectpicker">
+						</select>
+					</div>
+				</div>
+				<div class="container hidden">
+					<div class="row">
+						<div class="col-6 col-md-4">
+							<label>Multiple Select</label>
+							<select class="selectpicker" multiple>
+								<option>Toronto</option>
+								<option>Bucharest</option>
+								<option>Paris</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="FormularioTICPOL2019 class-flex">
+				<div class="references column">
+					<ul class="especifications">
+						<li class="work-date opaco">Marzo a<br>Mayo 2019</li>
+						<li class="job-title">Desarrollador PHP Full Stack</li>
+						<li class="work-date">Marzo a<br>Mayo 2019</li>
+					</ul>
+					<img class="img-project" src="assets\wireframes Projects\2019-05 TICPOL/DERECHOS - 2019 Modulo_Administrativo_Automatización_ReproducciónVideo 0.png">
+					<div class="companies">
 						<ul class="especifications">
-							<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="all-width"></div>
-		</div>
-		<div class="VideoPlataformaTICPOL2018 class-flex">
-			<div class="references column">
-				<ul class="especifications">
-					<li class="work-date opaco">Mayo a<br>Noviembre 2018</li>
-					<li class="job-title">Desarrollador PHP Full Stack</li>
-					<li class="work-date">Mayo a<br>Noviembre 2018</li>
-				</ul>
-				<img class="img-project" src="assets\wireframes Projects\2018-08 TICPOL/DERECHOS - Explipol_v2018_1 video.png">
-				<div class="companies">
-					<ul class="especifications">
-						<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-						<li class="">
-							<span class="title">
-								Proyecto Explipol 2018
-							</span>
-						</li>
-						<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-					</ul>
-				</div>
-			</div>
-			<div class="details column">
-				<div>
-					<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">Desarrollo de librería para la reproducción de Videos<br>Desarrollo Back-End de los servicios</span>
-					<div class="responsible-for">
-						<ol>
-							<li>Desarrollo Full-Stack de la librería para la reproducción de Video.</li>
-							<li>Desarrollo Back-end de la Plataforma Virtual de Docentes.</li>
-							<li>Diseño de la base de datos en MySQL.</li>
-							<li>Diseño de la estructuración de contenidos de la Plataforma.</li>
-							<li>Supervisión del diseño e implementación de wireframes.</li>
-						</ol>
-					</div>
-					<div class="more-dateils"><a href="#">+ Detalles</a></div>
-					<div class="company">
-						<ul class="especifications">
-							<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="all-width"></div>
-		</div>
-		<div class="OM20172018 class-flex">
-			<div class="references column">
-				<ul class="especifications">
-					<li class="work-date opaco">Enero 2017 a<br>Mayo 2018</li>
-					<li class="job-title">Desarrollador Full-Stack <BR> Responsable del Editor Gráfico</li>
-					<li class="work-date">Enero 2017 a<br>Mayo 2018</li>
-				</ul>
-				<img class="img-project" src="assets/wireframes Projects/2017-12 AVATAR/DERECHOS - MARKET EDITOR RESULTADO 2017 2018.png">
-				<div class="companies">
-					<ul class="especifications">
-						<li class="logo-framework"><img class="background-blue" src="assets\frameworks\logo - Angular Framework.png"></li>
-						<li class="">
-							<span class="title">
-								Proyecto Oráculo Matemágico
-							</span>
-						</li>
-						<li class="logo-framework"><img src="assets\frameworks\logo - Laravel Framework.svg"></li>
-					</ul>
-				</div>
-			</div>
-			<div class="details column">
-				<div>
-					<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
-						Implementación del módulo Editor Gráfico,<br>
-						análisis y diseño de la plataforma
-					</span>
-					<div class="responsible-for">
-						<ol>
-							<li>Líder del grupo de desarrollo<br>
-								<span style="font-size: 11pt"><b>A cargo de 3 desarrolladores y 1 diseñador.</b></span>
-							</li>
-							<li>Análisis y validación de software del prototipo de la plataforma web.</li>
-							<li>Primera Versión de la base de datos.</li>
-							<li>Integración del proyecto “Canvimation” en el proyecto principal.</li>
-							<li>Rediseño de las funcionalidades del editor gráfico "Canvimation".</li>
-						</ol>
-					</div>
-					<div class="more-dateils"><a href="#">+ Detalles</a></div>
-					<div class="company">
-						<ul class="especifications">
-							<li><img src="assets\Empresas\logo2 - Fundación Telefónifca.png"></li>
-							<li><img src="assets\Empresas\logo - GRUPO AVATAR.png"></li>
-							<li><img src="assets\Empresas\logo - PUCP.png"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="all-width"></div>
-		</div>
-		<div class="PlataformaTICPOL2017 class-flex">
-			<div class="references column">
-				<ul class="especifications">
-					<li class="work-date opaco">Enero 2017 a<br>Abril 2018</li>
-					<li class="job-title">Desarrollador PHP Full-Stack<BR>Líder del proyecto</li>
-					<li class="work-date">Enero 2017 a<br>Abril 2018</li>
-				</ul>
-				<img class="img-project" src="assets\wireframes Projects\2017-10 TICPOL/Derechos - Explipol_v2017_2.png">
-				<div class="companies">
-					<ul class="especifications">
-						<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-						<li class="">
-							<span class="title">
-								Proyecto Explipol 2017
-							</span>
-						</li>
-						<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-					</ul>
-				</div>
-			</div>
-			<div class="details column">
-				<div>
-					<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
-						Análisis, Diseño, Implementación y Validación de la Plataforma Explipol
-					</span>
-					<div class="responsible-for">
-						<ol>
-							<li>Análisis, Diseño e Implementación de la Plataforma Educativa Interactiva.<br>
-								<span style="font-size: 11pt">
-									<b>Automatización de las interacciones web
-									de cada recurso educativo (más de 100 interaccíones).</b>
+							<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+							<li class="">
+								<span class="title">
+									Proyecto Explipol 2019
 								</span>
 							</li>
-							<li>Implementación de la base de datos en MYSQL.</li>
-							<li>Líder del proyecto<br>
-								<span style="font-size: 11pt;"><b>
-									A cargo de: 2 maquetadores web para el diseño e implementación de wireframes y
-									3 especialistas en Educación para el diseño de recursos educativos
-								</b></span>
-							</li>
-						</ol>
-					</div>
-					<div class="more-dateils"><a href="#">+ Detalles</a></div>
-					<div class="company">
-						<ul class="especifications">
-							<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
+							<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="all-width"></div>
-		</div>
-		<div class="OM2016 class-flex">
-			<div class="references column">
-				<ul class="especifications">
-					<li class="work-date opaco">Agosto a <br>Diciembre del 2016</li>
-					<li class="job-title">Desarrollador PHP Full-Stack</li>
-					<li class="work-date">Agosto a <br>Diciembre del 2016</li>
-				</ul>
-				<img class="img-project" src="assets/wireframes Projects/2016-10 AVATAR/DERECHOS - OM REPORTES 2016 2.png">
-				<div class="companies">
-					<ul class="especifications">
-						<li class="opaco logo-framework"><img class="background-blue" src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-						<li class="">
-							<span class="title">
-								Proyecto Oráculo Matemágico
-							</span>
-						</li>
-						<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-					</ul>
-				</div>
-			</div>
-			<div class="details column">
-				<div>
-					<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
-						Responsable del módulo de Reportes para los usuarios de la Plataforma
-					</span>
-					<div class="responsible-for">
-						<ol>
-							<li>Análsis, diseño e implementación del módulo de reportes<br>
-								<span style="font-size: 11pt"><b>
-									Automatización de más de 180 reportes en total.<br>
-								</b></span>
-							</li>
-							<li>Desarrollo de reportes con librería HighCharts.</li>
-							<li>Algoritmo Hash de 2 capas para protección de datos del menor.</li>
-						</ol>
-					</div>
-					<div class="more-dateils"><a href="#">+ Detalles</a></div>
-					<div class="company">
-						<ul class="especifications">
-							<li><img src="assets\Empresas\logo2 - Fundación Telefónifca.png"></li>
-							<li><img src="assets\Empresas\logo - GRUPO AVATAR.png"></li>
-							<li><img src="assets\Empresas\logo - PUCP.png"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="all-width"></div>
-		</div>
-		<div class="EXPLIPOL2016 class-flex">
-			<div class="references column">
-				<ul class="especifications">
-					<li class="work-date opaco">Agosto a<br>Diciembre del 2016</li>
-					<li class="job-title">Desarrollador PHP Full-Stack</li>
-					<li class="work-date">Agosto a<br>Diciembre del 2016</li>
-				</ul>
-				<img class="img-project" src="assets\wireframes Projects\2016-11 EXPLIPOL/DERECHOS - EXPLIPOL2016 3.png">
-				<div class="companies">
-					<ul class="especifications">
-						<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-						<li class="">
-							<span class="title">
-								Proyecto Explipol 2016
-							</span>
-						</li>
-						<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-					</ul>
-				</div>
-			</div>
-			<div class="details column">
-				<div>
-					<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
-						Desarrollo de la Plataforma Online Interactiva del Proyecto Educativo Piloto Explipol
-					</span>
-					<div class="responsible-for">
-						<ol>
-							<li>Automatización del proceso de presentación de las animaciones interactivas.</li>
-							<li>Implementación de la base de datos en MYSQL.</li>
-							<li>Diseño de wireframes.</li>
-						</ol>
-					</div>
-					<div class="more-dateils"><a href="#">+ Detalles</a></div>
-					<div class="company">
-						<ul class="especifications">
-							<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="all-width"></div>
-		</div>
-	</div>
-	<div id="my-info" class="section class-flex">
-		<a class="hidden" name="estudios"></a>
-		<br>
-		<div class="title">“Considero el trabajo en equipo y el tiempo como la prioridad más alta”<br>
-		<span style="font-family: sans-serif; font-size: 16pt; letter-spacing: 2px; margin-bottom: 20px; display: block;">
-						Deseo trabajar  en una empresa que le  agrade la innovacción y  donde pueda<br> proponer  e implementar  soluciones  web.<br>
-					</span></div>
-		<div class="columns class-flex">
-			<div class="studies column class-flex">
-				<div class="class-flex">
-					<span class="title">
-						<b>Angular Front-End Framework</b><br>
-					</span>
-					<img src="assets\Empresas\logo - CourseraL.png">
-					<span style="font-size: 13pt; text-align: center;">Hong Kong University of Science and Technology on Coursera</span>
-					<span class="title" style="font-size: 12pt; text-align: center;">
-						Junio - Setiembre 2019
-					</span>
-				</div>
-				<div class="class-flex">
-					<span class="title">
-						<b>Ingeniería Informática</b><br>
-					</span>
-					<img src="assets\Empresas\logo - PUCP.png">
-					<span class="title" style="font-size: 12pt; text-align: center;">
-						2011 - 2016
-					</span>
-				</div>
-				<div class="class-flex">
-					<span class="title">
-						<b>Inglés avanzado</b><BR>
-					</span>
-					<img src="assets\Empresas\logo - IdiomasCatolica.png">
-					<span class="title" style="font-size: 12pt; text-align: center;">
-						2014 - 2016
-					</span>
-				</div>
-			</div>
-			<label class="first hidden"></label>
-			<div class="knowledge column class-flex hidden">
-				<div style="text-align: center; text-justify: inter-word;">
-					<span style="font-family: sans-serif; font-size: 16pt; letter-spacing: 2px; margin-bottom: 20px; display: block;">
-						Deseo trabajar  en una empresa que le  agrade la innovacción y  donde pueda proponer  e implementar  soluciones  web.<br>
-					</span>
-				</div>
-				<div>
-					<div class="frameworks">
-						<span style="font-family: Arial; font-size: 14pt; font-weight:bold;">Frameworks</span>
-						<div class="companies">
-							<ul>
-								<li><img style="background-color: #161863;" src="assets\frameworks\logo - Angular Framework.png"></li>
-							</ul>
-						</div>
-						<div class="companies">
-							<ul>
-								<li><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
-								<li><img style="background-color: white;" src="assets\frameworks\logo - Laravel Framework.svg"></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<label class="second"></label>
-			<div class="skills-qualities column class-flex">
-					
-					<div class="programming-languages" style="text-align: center; text-justify: inter-word;">
-						<span style="font-family: Arial; font-size: 14pt; font-weight:bold;">Conocimientos y experiencias en </span><br>
-						<div style="margin-left: 20px;  margin-top: 10px;">
-							<span style="font-family: Arial; font-size: 16pt;">Javacript, Typescript, PHP , SQL, MySQL , CSS, SCSS, HTML, JSON , Excel Macros , JAVA , C++, C#
-							</span>
-						</div>
-						<br>
-						<span style="font-family: Arial; font-size: 14pt; font-weight:bold; display: block; margin-top: 10px;">
-						Otras tecnologías:	
+				<div class="details column">
+					<div>
+						<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
+							Servicio para la reproducción automática
+							de Interacciones Educativas mediante
+							procesos de automatización
 						</span>
-						<div style="margin-left: 20px; margin-top: 10px; ">
-							<span style="font-family: Arial; font-size: 16pt;">
-								Bootstrap, jQuery, gulp, npm, git, xampp o wampp, web services, ajax, MySql Workbeanch, phpMyAdmin, Postman y entre otros
+						<div class="responsible-for">
+							<ol>
+								<li>Análisis de estructura de datos</li>
+								<li>Servicio administrativo para el ingreso de datos por sistema online</li>
+							</ol>
+						</div>
+						<div class="hidden more-dateils"><a href="#">+ Detalles</a></div>
+						<div class="company">
+							<ul class="especifications">
+								<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="all-width"></div>
+			</div>
+			<div class="VideoPlataformaTICPOL2018 class-flex">
+				<div class="references column">
+					<ul class="especifications">
+						<li class="work-date opaco">Mayo a<br>Noviembre 2018</li>
+						<li class="job-title">Desarrollador PHP Full Stack</li>
+						<li class="work-date">Mayo a<br>Noviembre 2018</li>
+					</ul>
+					<img class="img-project" src="assets\wireframes Projects\2018-08 TICPOL/DERECHOS - Explipol_v2018_1 video.png">
+					<div class="companies">
+						<ul class="especifications">
+							<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+							<li class="">
+								<span class="title">
+									Proyecto Explipol 2018
+								</span>
+							</li>
+							<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="details column">
+					<div>
+						<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">Desarrollo de librería para la reproducción de Videos<br>Desarrollo Back-End de los servicios</span>
+						<div class="responsible-for">
+							<ol>
+								<li>Desarrollo Full-Stack de la librería para la reproducción de Video.</li>
+								<li>Desarrollo Back-end de la Plataforma Virtual de Docentes.</li>
+								<li>Diseño de la base de datos en MySQL.</li>
+								<li>Diseño de la estructuración de contenidos de la Plataforma.</li>
+								<li>Supervisión del diseño e implementación de wireframes.</li>
+							</ol>
+						</div>
+						<div class="more-dateils"><a href="#">+ Detalles</a></div>
+						<div class="company">
+							<ul class="especifications">
+								<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="all-width"></div>
+			</div>
+			<div class="OM20172018 class-flex">
+				<div class="references column">
+					<ul class="especifications">
+						<li class="work-date opaco">Enero 2017 a<br>Mayo 2018</li>
+						<li class="job-title">Desarrollador Full-Stack <BR> Responsable del Editor Gráfico</li>
+						<li class="work-date">Enero 2017 a<br>Mayo 2018</li>
+					</ul>
+					<img class="img-project" src="assets/wireframes Projects/2017-12 AVATAR/DERECHOS - MARKET EDITOR RESULTADO 2017 2018.png">
+					<div class="companies">
+						<ul class="especifications">
+							<li class="logo-framework"><img class="background-blue" src="assets\frameworks\logo - Angular Framework.png"></li>
+							<li class="">
+								<span class="title">
+									Proyecto Oráculo Matemágico
+								</span>
+							</li>
+							<li class="logo-framework"><img src="assets\frameworks\logo - Laravel Framework.svg"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="details column">
+					<div>
+						<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
+							Implementación del módulo Editor Gráfico,<br>
+							análisis y diseño de la plataforma
+						</span>
+						<div class="responsible-for">
+							<ol>
+								<li>Líder del grupo de desarrollo<br>
+									<span style="font-size: 11pt"><b>A cargo de 3 desarrolladores y 1 diseñador.</b></span>
+								</li>
+								<li>Análisis y validación de software del prototipo de la plataforma web.</li>
+								<li>Primera Versión de la base de datos.</li>
+								<li>Integración del proyecto “Canvimation” en el proyecto principal.</li>
+								<li>Rediseño de las funcionalidades del editor gráfico "Canvimation".</li>
+							</ol>
+						</div>
+						<div class="more-dateils"><a href="#">+ Detalles</a></div>
+						<div class="company">
+							<ul class="especifications">
+								<li><img src="assets\Empresas\logo2 - Fundación Telefónifca.png"></li>
+								<li><img src="assets\Empresas\logo - GRUPO AVATAR.png"></li>
+								<li><img src="assets\Empresas\logo - PUCP.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="all-width"></div>
+			</div>
+			<div class="PlataformaTICPOL2017 class-flex">
+				<div class="references column">
+					<ul class="especifications">
+						<li class="work-date opaco">Enero 2017 a<br>Abril 2018</li>
+						<li class="job-title">Desarrollador PHP Full-Stack<BR>Líder del proyecto</li>
+						<li class="work-date">Enero 2017 a<br>Abril 2018</li>
+					</ul>
+					<img class="img-project" src="assets\wireframes Projects\2017-10 TICPOL/Derechos - Explipol_v2017_2.png">
+					<div class="companies">
+						<ul class="especifications">
+							<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+							<li class="">
+								<span class="title">
+									Proyecto Explipol 2017
+								</span>
+							</li>
+							<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="details column">
+					<div>
+						<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
+							Análisis, Diseño, Implementación y Validación de la Plataforma Explipol
+						</span>
+						<div class="responsible-for">
+							<ol>
+								<li>Análisis, Diseño e Implementación de la Plataforma Educativa Interactiva.<br>
+									<span style="font-size: 11pt">
+										<b>Automatización de las interacciones web
+										de cada recurso educativo (más de 100 interaccíones).</b>
+									</span>
+								</li>
+								<li>Implementación de la base de datos en MYSQL.</li>
+								<li>Líder del proyecto<br>
+									<span style="font-size: 11pt;"><b>
+										A cargo de: 2 maquetadores web para el diseño e implementación de wireframes y
+										3 especialistas en Educación para el diseño de recursos educativos
+									</b></span>
+								</li>
+							</ol>
+						</div>
+						<div class="more-dateils"><a href="#">+ Detalles</a></div>
+						<div class="company">
+							<ul class="especifications">
+								<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="all-width"></div>
+			</div>
+			<div class="OM2016 class-flex">
+				<div class="references column">
+					<ul class="especifications">
+						<li class="work-date opaco">Agosto a <br>Diciembre del 2016</li>
+						<li class="job-title">Desarrollador PHP Full-Stack</li>
+						<li class="work-date">Agosto a <br>Diciembre del 2016</li>
+					</ul>
+					<img class="img-project" src="assets/wireframes Projects/2016-10 AVATAR/DERECHOS - OM REPORTES 2016 2.png">
+					<div class="companies">
+						<ul class="especifications">
+							<li class="opaco logo-framework"><img class="background-blue" src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+							<li class="">
+								<span class="title">
+									Proyecto Oráculo Matemágico
+								</span>
+							</li>
+							<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="details column">
+					<div>
+						<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
+							Responsable del módulo de Reportes para los usuarios de la Plataforma
+						</span>
+						<div class="responsible-for">
+							<ol>
+								<li>Análsis, diseño e implementación del módulo de reportes<br>
+									<span style="font-size: 11pt"><b>
+										Automatización de más de 180 reportes en total.<br>
+									</b></span>
+								</li>
+								<li>Desarrollo de reportes con librería HighCharts.</li>
+								<li>Algoritmo Hash de 2 capas para protección de datos del menor.</li>
+							</ol>
+						</div>
+						<div class="more-dateils"><a href="#">+ Detalles</a></div>
+						<div class="company">
+							<ul class="especifications">
+								<li><img src="assets\Empresas\logo2 - Fundación Telefónifca.png"></li>
+								<li><img src="assets\Empresas\logo - GRUPO AVATAR.png"></li>
+								<li><img src="assets\Empresas\logo - PUCP.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="all-width"></div>
+			</div>
+			<div class="EXPLIPOL2016 class-flex">
+				<div class="references column">
+					<ul class="especifications">
+						<li class="work-date opaco">Agosto a<br>Diciembre del 2016</li>
+						<li class="job-title">Desarrollador PHP Full-Stack</li>
+						<li class="work-date">Agosto a<br>Diciembre del 2016</li>
+					</ul>
+					<img class="img-project" src="assets\wireframes Projects\2016-11 EXPLIPOL/DERECHOS - EXPLIPOL2016 3.png">
+					<div class="companies">
+						<ul class="especifications">
+							<li class="opaco logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+							<li class="">
+								<span class="title">
+									Proyecto Explipol 2016
+								</span>
+							</li>
+							<li class="logo-framework"><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="details column">
+					<div>
+						<span style="display: block; width: 100%; text-align: center; font-size: 17pt; margin-bottom : 20px;">
+							Desarrollo de la Plataforma Online Interactiva del Proyecto Educativo Piloto Explipol
+						</span>
+						<div class="responsible-for">
+							<ol>
+								<li>Automatización del proceso de presentación de las animaciones interactivas.</li>
+								<li>Implementación de la base de datos en MYSQL.</li>
+								<li>Diseño de wireframes.</li>
+							</ol>
+						</div>
+						<div class="more-dateils"><a href="#">+ Detalles</a></div>
+						<div class="company">
+							<ul class="especifications">
+								<li><img src="assets\Empresas\logo - EXPLIPOL.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="all-width"></div>
+			</div>
+		</div>
+		<div id="my-info" class="section class-flex">
+			<a class="hidden" name="estudios"></a>
+			<br>
+			<div class="title">“Considero el trabajo en equipo y el tiempo como la prioridad más alta”<br>
+				<span style="font-family: sans-serif; font-size: 16pt; letter-spacing: 2px; margin-bottom: 20px; display: block;">
+					Deseo trabajar  en una empresa que le  agrade la innovacción y  donde pueda<br> proponer  e implementar  soluciones  web.<br>
+				</span></div>
+				<div class="columns class-flex">
+					<div class="studies column class-flex">
+						<div class="class-flex">
+							<span class="title">
+								<b>Angular Front-End Framework</b><br>
+							</span>
+							<img src="assets\Empresas\logo - CourseraL.png">
+							<span style="font-size: 13pt; text-align: center;">Hong Kong University of Science and Technology on Coursera</span>
+							<span class="title" style="font-size: 12pt; text-align: center;">
+								Junio - Setiembre 2019
+							</span>
+						</div>
+						<div class="class-flex">
+							<span class="title">
+								<b>Ingeniería Informática</b><br>
+							</span>
+							<img src="assets\Empresas\logo - PUCP.png">
+							<span class="title" style="font-size: 12pt; text-align: center;">
+								2011 - 2016
+							</span>
+						</div>
+						<div class="class-flex">
+							<span class="title">
+								<b>Inglés avanzado</b><BR>
+							</span>
+							<img src="assets\Empresas\logo - IdiomasCatolica.png">
+							<span class="title" style="font-size: 12pt; text-align: center;">
+								2014 - 2016
 							</span>
 						</div>
 					</div>
+					<label class="first hidden"></label>
+					<div class="knowledge column class-flex hidden">
+						<div style="text-align: center; text-justify: inter-word;">
+							<span style="font-family: sans-serif; font-size: 16pt; letter-spacing: 2px; margin-bottom: 20px; display: block;">
+								Deseo trabajar  en una empresa que le  agrade la innovacción y  donde pueda proponer  e implementar  soluciones  web.<br>
+							</span>
+						</div>
+						
+					</div>
+					<label class="second"></label>
+					<div class="skills-qualities column class-flex">
+						<div class="frameworks" style="text-align: center; text-justify: inter-word;">
+							<span style="font-family: Arial; font-size: 14pt; font-weight:bold;">Frameworks</span>
+							<div class="companies">
+								<ul>
+									<li><img style="background-color: #161863;" src="assets\frameworks\logo - Angular Framework.png"></li>
+								</ul>
+							</div>
+							<div class="companies" style="justify-content: space-around;">
+								<ul>
+									<li><img src="assets\frameworks\logo - CodeIgniter Framework.png"></li>
+									<li><img style="background-color: white;" src="assets\frameworks\logo - Laravel Framework.svg"></li>
+								</ul>
+							</div>
+						</div>
+						<br><br>
+						<div class="programming-languages" style="text-align: center; text-justify: inter-word; margin-top: 35px;">
+							<span style="font-family: Arial; font-size: 14pt; font-weight:bold;">Conocimientos y experiencias en </span><br>
+							<div style="margin-left: 20px;  margin-top: 10px;">
+								<span style="font-family: Arial; font-size: 16pt;">Javacript, Typescript, PHP , SQL, MySQL , CSS, SCSS, HTML, JSON , Excel Macros , JAVA , C++, C#
+								</span>
+							</div>
+							<br>
+							<span style="font-family: Arial; font-size: 14pt; font-weight:bold; display: block; margin-top: 10px;">
+								Otras tecnologías:
+							</span>
+							<div style="margin-left: 20px; margin-top: 10px; ">
+								<span style="font-family: Arial; font-size: 16pt;">
+									Bootstrap, jQuery, gulp, npm, git, xampp o wampp, web services, ajax, MySql Workbeanch, phpMyAdmin, Postman y entre otros
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<div class="footer-menu">
-		<a class="hidden" href="assets/docs/CV RenzoSegura.pdf"></a>
-		<label class="center"><span class="icon">®</span>enzoSegura</label>
-		<div>
-			<ul>
-				<li>
-					<label class="icon mail"></label>
-					<span>renzosegurapm@gmail.com</span>
-				</li>
-				<li>
-					<label class="icon github"></label>
-					<span>github.com/rsegura93</span>
-				</li>
-				<li>
-					<label class="icon cv"></label>
-					<span>curriculum vitae</span>
-				</li>
-				<li>
-					<label class="icon home"></label>
-					<span>rsegura93.github.io/portafolio</span>
-				</li>
-			</ul>
-		</div>
-	</div>
-</body>
-</html>
+			<div class="footer-menu">
+				<a class="hidden" href="assets/docs/CV RenzoSegura.pdf"></a>
+				<label class="center"><span class="icon">®</span>enzoSegura</label>
+				<div>
+					<ul>
+						<li>
+							<label class="icon mail"></label>
+							<span>renzosegurapm@gmail.com</span>
+						</li>
+						<li>
+							<label class="icon github"></label>
+							<span>github.com/rsegura93</span>
+						</li>
+						<li>
+							<label class="icon cv"></label>
+							<span>curriculum vitae</span>
+						</li>
+						<li>
+							<label class="icon home"></label>
+							<span>rsegura93.github.io/portafolio</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</body>
+	</html>
