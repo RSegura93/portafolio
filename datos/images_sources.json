@@ -1,0 +1,26 @@
+const images_src={
+	"FormularioTICPOL2019" : [
+		"assets/proyectos/2019-05 TICPOL/",
+		4
+	],
+	"VideoPlataformaTICPOL2018" : [
+		"assets/proyectos/2018-08 TICPOL/",
+		4
+	],
+	"OM20172018" : [
+		"assets/proyectos/2017-12 AVATAR/",
+		4
+	],
+	"PlataformaTICPOL2017" : [
+		"assets/proyectos/2017-10 TICPOL/",
+		3
+	],
+	"OM2016" : [
+		"assets/proyectos/2016-10 AVATAR/",
+		6
+	],
+	"EXPLIPOL2016" : [
+		"assets/proyectos/2016-11 EXPLIPOL/",
+		3
+	]
+}

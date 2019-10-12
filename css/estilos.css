@@ -70,6 +70,10 @@ ul {
 	padding-top: 50px;
 	color: #fff;
 	background-color: #344555;
+	/*background: rgb(52,69,85);
+	background: -webkit-linear-gradient(49deg, rgba(52,69,85,1) 60%, rgba(238,238,238,1) 87%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(49deg, rgba(52,69,85,1) 60%, rgba(238,238,238,1) 87%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(139deg, rgba(52,69,85,1) 60%, rgba(238,238,238,1) 87%, rgba(255,255,255,1) 100%);*/
 }
 #proyectos, #proyectos1 {
 	background-color: white;

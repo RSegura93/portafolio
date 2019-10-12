@@ -17,7 +17,8 @@ window.onload = function() {
 	updateShowFormBy();
 
 	startAnimation();
-
+	Animation.checkVisiblesToAnimate();
+	uploadScreenshotsProjects();
 	showingCV();
 	// handler events 
 	handlerTopMenu();
@@ -118,4 +119,23 @@ function showingCV(){
 	$("#iconCV").click(function(){
 		linkToContact("cv");		
 	});
+}
+
+function uploadScreenshotsProjects(){
+	var contProj;
+	for(var class_project in images_src ){
+		contProj = $("." + class_project )
+			.find("div.containerScreenshots");
+		for( var hidden, index_name = 1, i = 0;
+				i < images_src[class_project][1];
+				i++, index_name++ ){
+			(index_name == images_src[class_project][1])?
+				hidden = 'active': hidden = 'hidden';
+			var imagen = $("<img class='"+hidden+" img-project'>").attr("src",
+							images_src[class_project][0]+
+							"G"+index_name+".png");
+			contProj.append(imagen);
+		}
+		Animation.animaciones.push(new Animation(contProj));
+	}
 }
