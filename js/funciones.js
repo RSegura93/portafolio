@@ -39,7 +39,8 @@ function linkToContact(type) {
 	} else if (type == "home") {
 		location.href = location.href;
 	} else if (type == "cv") {
-		var base_url = location.href.replace(/index.html#{0,1}(.*)/,"");
+		var base_url = location.href.replace(/#(.*)/,"");
+		base_url = base_url.replace(/(index.html(.*))/,"");
 		window.open(base_url + "/assets/docs/CV%20RenzoSegura.pdf");
 	} else if (type == "#proyectos") {
 		var base_url = location.href.replace(/index.html#{0,1}(.*)/,"index.html");
