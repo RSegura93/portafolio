@@ -16,8 +16,8 @@ window.onload = function() {
 	addTagstoProjects();
 	updateShowFormBy();
 
-	startAnimation();
-	Animation.checkVisiblesToAnimate();
+	// startAnimation();
+	Animation.checkEachSecond();
 	uploadScreenshotsProjects();
 	showingCV();
 	// handler events 
@@ -61,14 +61,17 @@ function handlerContactList() {
 }
 
 function handlerTopMenu() {
-	$(".top-menu .menu").hover(function() {
-		var desplegable = $(this).find("ul");
-		if (desplegable.hasClass("hidden")) {
-			desplegable.removeClass("hidden");
-		} else {
-			$(this).find("ul").addClass("hidden");
-		}
-	});
+	// $(".top-menu .menu").hover(showMenu);
+	$(".top-menu .menu").click(showMenu);
+}
+
+function showMenu() {
+	var desplegable = $(this).find("ul");
+	if (desplegable.hasClass("hidden")) {
+		desplegable.removeClass("hidden");
+	} else {
+		desplegable.addClass("hidden");
+	}
 }
 
 function startAnimation(){
@@ -122,10 +125,14 @@ function showingCV(){
 }
 
 function uploadScreenshotsProjects(){
-	var contProj;
+	var contProj, options = {};
 	for(var class_project in images_src ){
 		contProj = $("." + class_project )
 			.find("div.containerScreenshots");
+		// if(){
+		options = images_src[class_project][2]?
+					images_src[class_project][2]:{};
+		// }
 		for( var hidden, index_name = 1, i = 0;
 				i < images_src[class_project][1];
 				i++, index_name++ ){
@@ -136,6 +143,6 @@ function uploadScreenshotsProjects(){
 							"G"+index_name+".png");
 			contProj.append(imagen);
 		}
-		Animation.animaciones.push(new Animation(contProj));
+		Animation.animaciones.push(new Animation(contProj, options));
 	}
 }

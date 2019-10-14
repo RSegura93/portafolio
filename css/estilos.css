@@ -14,7 +14,7 @@ ul {
 .top-menu {
 	width: 100%;
 	height: 50px;
-	background-color: rgba( 255, 255, 255, 0.95 );
+	/*background-color: rgba( 255, 255, 255, 0.95 );*/
 	position: fixed;
 	z-index: 10;
 }
@@ -23,7 +23,7 @@ ul {
 	width: 100%;
 	height: auto;
 	min-height: 100px;
-	background-color: rgb(10, 10, 10);
+	background-color: white;
 	z-index: 10;
 	display: flex;
 	justify-content: space-between;
@@ -68,8 +68,14 @@ ul {
 
 #info {
 	padding-top: 50px;
-	color: #fff;
-	background-color: #344555;
+	color: black;
+	/*background-color: #344555;*/
+	/*background-color: blue;*/
+	/*background-image: url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Fvrije-…ncrete-room-corner-shadow-cement-behang-concept_53876-14112.jpg&f=1&nofb=1);*/
+	background-image: url(https://image.freepik.com/vrije-photo/concrete-room-corner-shadow-cement-behang-concept_53876-14112.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 	/*background: rgb(52,69,85);
 	background: -webkit-linear-gradient(49deg, rgba(52,69,85,1) 60%, rgba(238,238,238,1) 87%, rgba(255,255,255,1) 100%);
 	background: -o-linear-gradient(49deg, rgba(52,69,85,1) 60%, rgba(238,238,238,1) 87%, rgba(255,255,255,1) 100%);
@@ -82,8 +88,9 @@ ul {
 	background-color: rgba( 27, 117, 187, 0.40);
 }
 #my-info {
-	color: #fff;
-	background-color: #344555;
+	color: #000000;
+    background: rgb(247,248,248);
+    background: linear-gradient(0deg, rgb(215, 215, 215) 31%, rgba(255,255,255,1) 100%);
 }
 #referencias {
 	background-color: #F0F0F0;

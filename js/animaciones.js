@@ -1,10 +1,12 @@
 class Animation {
-	constructor (cont){
+	constructor (cont, options){
 		var self=this;
+		self.max_rounds = options.max_rounds?options.max_rounds:6;
+		self.stop = options.stop?options.stop:true;
+		self.start = options.start?options.start:false;
 		self.container = cont;
 		self.intervalClip = false;
 		self.rounds = 0;
-		self.max_rounds = 6;
 		self.images = self.container.find("img");
 		self.visible = $(self.images[0]);
 		self.toFadeOut;
@@ -16,6 +18,7 @@ class Animation {
 			$(self.images[0]):$(visibles[0]);
 		// self.container.mouseenter(function(){self.startClip();});
 		// self.container.mouseleave(function(){self.stopClip();});
+		if(self.start)self.startClip();
 	}
 	startClip =  function (){
 		var self = this;
@@ -45,6 +48,7 @@ class Animation {
 	}
 
 	stopClipInmidiate = function(){
+		if (!this.stop) return;
 		clearInterval(this.intervalClip);
 		this.intervalClip=false;
 		this.rounds = 0;
@@ -58,6 +62,9 @@ class Animation {
 }
 Animation.animaciones = [];
 Animation.timer=false;
+Animation.checkEachSecond = function(){
+	setInterval(Animation.checkVisiblesToAnimate, 1500)
+}
 Animation.checkVisiblesToAnimate = function(){
 	var animaciones = Animation.animaciones;
 	if( animaciones.length<1 )return;

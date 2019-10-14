@@ -1,9 +1,8 @@
 .footer-menu {
-	color: white !important;
+	color: black !important;
 }
 
 .footer-menu > label.center {
-	color: white;
 	display:block;
 	height: 100%;
 	text-align: center;
@@ -45,7 +44,7 @@ label.cv{
 
 .footer-menu > div {
 	margin-right : 10px ;
-	border-left  :  1px solid white ;
+	border-left  :  1px solid black ;
     padding-left : 10px ;
 }
 

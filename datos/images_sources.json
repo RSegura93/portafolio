@@ -1,4 +1,12 @@
 const images_src={
+	"landingProjects" : [
+		"assets/proyectos/landing-projects/",
+		5,{
+			"max_rounds": 3000,
+			"stop": false,
+			"start": true
+		}
+	],
 	"FormularioTICPOL2019" : [
 		"assets/proyectos/2019-05 TICPOL/",
 		4

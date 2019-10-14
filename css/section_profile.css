@@ -19,33 +19,31 @@
 	width: 50px;
 	height: 50px;
 	background-size: 30px 30px, cover;
-	left: 107px;	top: 160px;		    position: relative;
+	/*left: 107px;	top: 160px;		    position: relative;*/
 	background-image: url("../assets/icons/icon-cv.png");
 }
 #iconLaravel{
-	left: 110px;	top: 68px;		    position: relative;
+	/*left: 110px;	top: 68px;		    position: relative;*/
 	background-image: url("../assets/icons/icon-laravel.png");
 }
 #iconAngular{
-	right: 23px;	top: 25px;		    position: relative;
+	/*right: 23px;	top: 25px;		    position: relative;*/
 	background-image: url("../assets/icons/icon-angular.png");
 }
 #iconCodeIgniter{
-	right: 155px;	top: 72px;		    position: relative;
+	/*right: 155px;	top: 72px;		    position: relative;*/
 	background-image: url("../assets/icons/icon-codeigniter.png");
 }
 
-.photoaround{
+.icons-landing{
 	cursor: pointer;
 	width: 50px;
 	height: 50px;
 	background-size: 50px 50px, cover;
-	/*position: relative;*/
-    align-self: flex-end;
+	align-self: flex-end;
 	background-repeat: no-repeat;
 	background-position: center center;
     animation-duration: 1s;
-    /*pointer-events: none; */
 }
 .fadeout{
     -webkit-animation: fadeout 1s ease-in forwards;
@@ -114,7 +112,7 @@
 }
 
 .buttons.boxFlex{
-	height: 500px;
+	/*height: 500px;*/
 }
 
 div.profile.boxFlex, div.buttons.boxFlex {
@@ -220,4 +218,11 @@ div.profile.boxFlex, div.buttons.boxFlex {
 	.buttons.boxFlex .btn1 + .btn1 {
 		margin-top: 40px;
 	}
+}
+
+
+.landingProjects .containerScreenshots .img-project{
+	width: 90%;
+	height: 90%;
+	/*margin-top:10%;*/
 }

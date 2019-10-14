@@ -1,5 +1,5 @@
 .top-menu {
-	color: #344555;
+	color: black;
 }
 
 .top-menu .logo{
@@ -32,10 +32,9 @@
 
 .top-menu .menu ul li {
 	list-style       : none;
-	background-color : black;
-	color            : white;
+	/*background-color : black;*/
+	color            : black;
 	width            : 150px;
-	font-size        : 18px;
 	padding-left     : 10px;
 	letter-spacing   : 1px;
 	border-top       : 1px #888888 solid;
@@ -48,10 +47,10 @@
 
 a.redirect {
 	text-decoration: none;
-	color: white;
+	color: black;
+	font-size: 16pt;
 }
 a.redirect:hover {
 	text-decoration: none;
-	font-size: 14pt;
 	font-weight: 700;
 }

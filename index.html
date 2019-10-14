@@ -34,46 +34,50 @@
 		<script type="text/javascript" src="js/selectors_process.js"></script>
 		<!-- <script type="text/javascript" src="js/animateplus.js"></script> -->
 	</head>
-	<body onscroll="Animation.checkVisiblesToAnimate()">
+	<body>
 		<div class="top-menu">
 			<div class="logo"><a href="#info">RSegura</a></div>
 			<div class="menu">
 				<ul class="hidden">
-					<li><a class="redirect" href="#info">Perfil</a></li>
+					<li onclick="linkToContact('cv')"><a class="redirect" href="#">CV</a></li>
 					<li><a class="redirect" href="#proyectos">Proyectos</a></li>
-					<li><a class="redirect" href="#my-info">Estudios y otros</a></li>
+					<li><a class="redirect" href="#my-info">Estudios</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="info" class="section">
 			<a class="hidden" name="info"></a>
 			<div class="class-flex">
-				<div class="profile boxFlex">
-					<div class="class-flex">
-						<span id="iconCV" class="photoaround opaco">
-						</span>
-						<span id="iconLaravel" class="photoaround opaco">
+				<div class="landingProjects" style="margin-right: 45px;">
+				    <div class="containerScreenshots" style=" width: 770px; height: 434px;">
+				    	<span style="height:10%; display: block; opacity:0;">_</span>
+						<!-- <img class="img-project" style=" width: 90%; height: 90%; margin:auto;" src="assets/proyectos/2019-05 TICPOL/G1.png"> -->
+					</div>
+					<div style="height: 160px;" class="class-flex">
+						<span id="iconLaravel" class="icons-landing">
 							<a href="#proyectos"></a>
 						</span>
-						<span id="iconAngular" class="photoaround opaco">
+						<span id="iconAngular" class="icons-landing">
 							<a href="#proyectos"></a>
 						</span>
-						<span id="iconCodeIgniter" class="photoaround opaco">
+						<span id="iconCodeIgniter" class="icons-landing">
 							<a href="#proyectos"></a>
 						</span>
 					</div>
+				</div>
+				<div class="buttons boxFlex" style="min-width: 200px;max-width: 400px;text-align: right;font-size: 15pt;letter-spacing: 1px;flex-direction: column-reverse;margin-bottom: 20px;margin-right: 30px;">
+					<span style="margin:unset; color: black;">
+					Desarrollador  web  con  3  años  de  experiencia.<br>
+					<span id="iconCV" class="hidden icons-landing"></span>
+					<b style="font-style: italic;">Renzo Segura</b>
+					</span>
+				</div>
+				<div class="hidden profile boxFlex">
 					<div id="photo" class="opaco"></div>
 					<span class="title">
 						DESARROLLADOR WEB<br>FULL-STACK
 					</span>
 				</div>
-				<div class="buttons boxFlex">
-					<div class="btn1 opaco"><a href="#proyectos">PROYECTOS</a></div>
-					<div class="btn1 opaco"><a href="#my-info">ESTUDIOS</a></div>
-				</div>
-			</div>
-			<div class="all-width">
-				<span class="sign-name">Renzo Segura M.</span>
 			</div>
 		</div>
 		<div id="proyectos" class="section">
@@ -429,21 +433,21 @@
 					<div class="studies column class-flex">
 						<div class="class-flex">
 							<span class="title">
+								<b>Ingeniería Informática</b><br>
+							</span>
+							<img src="assets\Empresas\logo - PUCP.png">
+							<span class="title" style="font-size: 12pt; text-align: center;">
+								2011 - 2016
+							</span>
+						</div>
+						<div class="class-flex">
+							<span class="title">
 								<b>Angular Front-End Framework</b><br>
 							</span>
 							<img src="assets\Empresas\logo - CourseraL.png">
 							<span style="font-size: 13pt; text-align: center;">Hong Kong University of Science and Technology on Coursera</span>
 							<span class="title" style="font-size: 12pt; text-align: center;">
 								Junio - Setiembre 2019
-							</span>
-						</div>
-						<div class="class-flex">
-							<span class="title">
-								<b>Ingeniería Informática</b><br>
-							</span>
-							<img src="assets\Empresas\logo - PUCP.png">
-							<span class="title" style="font-size: 12pt; text-align: center;">
-								2011 - 2016
 							</span>
 						</div>
 						<div class="class-flex">
