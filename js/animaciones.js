@@ -77,7 +77,11 @@ Animation.checkVisiblesToAnimate = function(){
 	for (var i = 0; i < animaciones.length; i++) {
 		animaciones[i].checkVisible();
 		ve1 = animaciones[i].visiblePosition;
-		if ((ve1.perc==maxV.perc)?(ve1.top<maxV.top):(ve1.perc>maxV.perc) ){
+		if ((ve1.perc==maxV.perc)?(ve1.top<=maxV.top):(ve1.perc>maxV.perc) ){
+			// its missing when displayed mode "en resumen"
+			// 2 with the same top and perc
+			// if( (Math.round(Math.random(10))%2) && // random, could be 0 or 1
+			// 	ve1.perc==maxV.perc && ve1.top==maxV.top ) continue;
 			maxV.top = ve1.top ;
 			maxV.bottom = ve1.bottom;
 			maxV.perc = ve1.perc ;
