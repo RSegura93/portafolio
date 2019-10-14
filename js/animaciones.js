@@ -2,7 +2,7 @@ class Animation {
 	constructor (cont, options){
 		var self=this;
 		self.max_rounds = options.max_rounds?options.max_rounds:6;
-		self.stop = options.stop?options.stop:true;
+		self.stop = options.stop!=null?options.stop:true;
 		self.start = options.start?options.start:false;
 		self.container = cont;
 		self.intervalClip = false;
